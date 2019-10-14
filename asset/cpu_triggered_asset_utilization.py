@@ -22,6 +22,14 @@ sys.path.insert(0, BEACON_DIR)
 from beacons import _nisysmgmt_health
 from systemlink.assetmgmtutilclient import AssetManagementUtilization
 
+# The parsed arguments. Set in :func:`main`.
+PARSED_ARGUMENTS = None
+# Whether a utilization is currently in progress.
+UTILIZATION_IN_PROGRESS = False
+# An instance of :class:`AssetManagementUtilization` representing the current utilization, if any.
+ONGOING_UTILIZATION = None
+
+
 def _stop_ongoing_utilization():
     global UTILIZATION_IN_PROGRESS
     global ONGOING_UTILIZATION
@@ -29,6 +37,7 @@ def _stop_ongoing_utilization():
         ONGOING_UTILIZATION.close()
         ONGOING_UTILIZATION = None
         UTILIZATION_IN_PROGRESS = False
+
 
 def _start_or_update_ongoing_utilization():
     global UTILIZATION_IN_PROGRESS
@@ -46,11 +55,13 @@ def _start_or_update_ongoing_utilization():
     else:
         ONGOING_UTILIZATION.update()
 
+
 def _mark_as_utilized_by_cpu_percentage(cpu_value):
     if cpu_value >= PARSED_ARGUMENTS.threshold:
         _start_or_update_ongoing_utilization()
     else:
         _stop_ongoing_utilization()
+
 
 def _get_mean_cpu_usage():
     tag_info = {}
@@ -58,14 +69,17 @@ def _get_mean_cpu_usage():
     _nisysmgmt_health.calc_cpu(tag_info)
     return tag_info['cpu_mean_perc']['value']
 
+
 def _check_cpu_triggered_utilization():
     cpu_value = _get_mean_cpu_usage()
     if PARSED_ARGUMENTS.print_recorded_cpu_values:
         print("Mean CPU utilization for the past {} minutes is {}".format(PARSED_ARGUMENTS.interval, cpu_value))
     _mark_as_utilized_by_cpu_percentage(cpu_value)
 
+
 def _minutes_to_seconds(minutes):
     return minutes * 60
+
 
 def loop():
     '''
@@ -81,11 +95,9 @@ def loop():
     finally:
         _stop_ongoing_utilization()
 
+
 def main(arguments=None):
     global PARSED_ARGUMENTS
-    global UTILIZATION_IN_PROGRESS
-    global ONGOING_UTILIZATION
-
     logged_user_name = getpass.getuser()
     parser = argparse.ArgumentParser(description = 'CPU usage triggered asset utilization.', formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     parser.add_argument('filename', nargs ='+', action = 'store')
@@ -96,12 +108,9 @@ def main(arguments=None):
     parser.add_argument('--user_name', '-u', default = logged_user_name, help = 'The user name that will be used in the utilization entries. Defaults to the logged user.')
     parser.add_argument('--task_name', '-t', default = 'cpu_usage_triggered_utilization', help = 'The task name that will be used in the utilization entries.')
     parser.add_argument('--print_recorded_cpu_values', '-p', action = 'store_true', help = 'Prints the CPU usage once for every interval.')
-
     PARSED_ARGUMENTS = parser.parse_args(sys.argv if arguments is None else arguments)
-    UTILIZATION_IN_PROGRESS = False
-    ONGOING_UTILIZATION = None
-
     loop()
+
 
 if __name__ == '__main__':
     main()
