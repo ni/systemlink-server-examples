@@ -1,8 +1,8 @@
-# systemlink-python-examples
+# systemlink-server-examples
 
 This repository contains Python-based NI SystemLink examples.
 
-## Using systemlink-python-examples
+## Using systemlink-server-examples
 
 ### Jupyter examples
 
