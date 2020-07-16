@@ -9,7 +9,7 @@ amount of current loss and voltage loss are induced to simulate a non-ideal devi
 A top level result is created containing metadata about the overall test.
 
 The example sweeps across a range of input currents and voltages and takes measurements
-for each combination and stores a single measurement within each test step.  The test
+for each combination. It then stores each single measurement within each test step.  The test
 steps are associated with the test result, and in some cases, as child relationships
 to other test steps.  Each step is uploaded to the SystemLink server as it is generated.
 
