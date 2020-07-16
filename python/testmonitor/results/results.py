@@ -104,7 +104,7 @@ def generate_step_data(
     :param status:
     :return: The step data used to create a test step.
     """
-    step_status = status if status is not None else StatusObject(status_type='RUNNING')
+    step_status = status if status else StatusObject(status_type='RUNNING')
 
     step_data = TestStepRequestObject(
         step_id=None,
