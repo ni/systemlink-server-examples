@@ -34,7 +34,7 @@ from systemlink.clients.nitestmonitor.models.status_object import StatusObject
 from systemlink.clients.nitestmonitor.models.named_value_object import NamedValueObject
 
 
-def measure_power(current: float, voltage: float = 0) -> object:
+def measure_power(current: float, voltage: float = 0) -> Tuple[float, List[Any], List[Any]]:
     """
     Simulates taking an electrical power measurement.
     This introduces some random current and voltage loss.
