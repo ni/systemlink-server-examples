@@ -3,7 +3,7 @@
 This is an example of uploading test results to the SystemLink Test Monitor service.
 It simulates measuring the power output from a device and tests the measured power
 to ensure it is within a specified upper and lower limit.  The power is simulated using
-a the simple electrical equation `P=VI` (power=voltage*current).  In this example, a random
+the simple electrical equation `P=VI` (power=voltage*current).  In this example, a random
 amount of current loss and voltage loss are induced to simulate a non-ideal device.
 
 A top level result is created containing metadata about the overall test.
