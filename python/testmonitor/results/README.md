@@ -15,3 +15,6 @@ to other test steps.  Each step is uploaded to the SystemLink server as it is ge
 
 At the end, the step status is evaluated to set the status of the parent step and
 ultimately sets the status of the top-level test result.
+
+## Depenencies
+- The **NI SystemLink Python SDK** must be installed on the system using the NI Package Manager.  The package is available when installing the SystemLink Server or Client.
