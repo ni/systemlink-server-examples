@@ -13,5 +13,5 @@ The **jupyter** folder contains Jupyter notebook examples that exercise the diff
 The **dashboards** folder contains example layouts and tile configurations for customized use.
 - [testmonitor/OEE](./dashboards/testmonitor/OEE) - Overall Equipment Effectiveness
 
-The **python** folder contains examples of accessing the SystemLink server via python clients.
+The **python** folder contains examples of accessing the SystemLink server via Python clients.
 - [testmonitor/results](./python/testmonitor/results) - Upload test results and steps to the Test Monitor service.
