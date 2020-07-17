@@ -15,7 +15,7 @@ from systemlink.clients.nitestmonitor.models.status_object import StatusObject
 
 def main():
     # Set default values
-    host = 'http://localhost/nitestmonitor'
+    host = "http://localhost/nitestmonitor"
     api_key = None
     api_key_prefix = None
     username = None
@@ -23,24 +23,21 @@ def main():
 
     # Parse command-line arguments
     for arg in sys.argv[1:]:
-        if '--host:' in arg:
-            host = arg.replace('--host:', '')
-        if '--api_key:' in arg:
-            api_key = arg.replace('--api_key:', '')
-        if '--api_key_prefix:' in arg:
-            host = arg.replace('--api_key_prefix:', '')
-        if '--username:' in arg:
-            username = arg.replace('--username:', '')
-        if '--password:' in arg:
-            password = arg.replace('--password:', '')
+        if "--host:" in arg:
+            host = arg.replace("--host:", "")
+        if "--api_key:" in arg:
+            api_key = arg.replace("--api_key:", "")
+        if "--api_key_prefix:" in arg:
+            host = arg.replace("--api_key_prefix:", "")
+        if "--username:" in arg:
+            username = arg.replace("--username:", "")
+        if "--password:" in arg:
+            password = arg.replace("--password:", "")
 
     # Create a configuration specifying the server credentials
     configuration = Configuration(
-        host=host,
-        api_key=api_key,
-        api_key_prefix=api_key_prefix,
-        username=username,
-        password=password)
+        host=host, api_key=api_key, api_key_prefix=api_key_prefix, username=username, password=password
+    )
     http_client = ApiClient(configuration)
 
     # Initialize SystemLink APIs
