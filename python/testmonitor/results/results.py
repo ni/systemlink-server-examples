@@ -19,7 +19,7 @@ ultimately sets the status of the top-level test result.
 
 import random
 import uuid
-from typing import Any
+from typing import Any, Tuple, Dict, List
 
 from systemlink.clients.nitestmonitor import ResultsApi
 from systemlink.clients.nitestmonitor import StepsApi
@@ -55,7 +55,7 @@ def measure_power(current: float, voltage: float = 0) -> Tuple[float, List[Any],
     return power, inputs, outputs
 
 
-def build_power_measurement_params(power: float, low_limit: float, high_limit: float, status: object) -> object:
+def build_power_measurement_params(power: float, low_limit: float, high_limit: float, status: StatusObject) -> Any:
     """
     Builds a Test Monitor measurement parameter object for the power test.
     :param power: The electrical power measurement.
@@ -82,9 +82,9 @@ def build_power_measurement_params(power: float, low_limit: float, high_limit: f
 def generate_step_data(
     name: str,
     step_type: str,
-    inputs: object = None,
-    outputs: object = None,
-    parameters: object = None,
+    inputs: List[Any] = None,
+    outputs: List[Any] = None,
+    parameters: Any = None,
     status: StatusObject = None,
 ) -> TestStepRequestObject:
     """
