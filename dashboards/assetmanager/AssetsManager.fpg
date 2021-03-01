@@ -1,0 +1,1038 @@
+{
+  "name": "niapmAssetsManagerDashboard",
+  "type": "gridPanel",
+  "x": "0",
+  "y": "0",
+  "width": "1440",
+  "height": "1200",
+  "numberOfColumns": "12",
+  "attributes": [
+    { "backgroundColor": "%23FFFFFF" },
+    { "panelAlignment": "align%20left" },
+    { "version": "v3.35.0" }
+  ],
+  "bindings": [],
+  "locales": {
+    "en": {
+      "tile1.title": "ASSETS",
+      "tile1.plotLegend.label0": "Connected",
+      "tile1.plotLegend.label1": "Disconnected",
+      "tile2.title": "CALIBRATED ASSETS",
+      "tile2.plotLegend.label0": "OK",
+      "tile2.plotLegend.label1": "Approaching",
+      "tile2.plotLegend.label2": "Past",
+      "tile3.title": "PAST RECOMMENDED CALIBRATION",
+      "tile3.units": "",
+      "tile4.title": "APPROACHING CALIBRATION DATE",
+      "tile4.units": "",
+      "tile5.title": "CONNECTED",
+      "tile5.units": "",
+      "tile6.title": "DISCONNECTED",
+      "tile6.units": "",
+      "tile7.title": "CONNECTION HISTORY",
+      "tile7.xAxisLabel": "X Axis",
+      "tile7.yAxisLabel": "Y Axis",
+      "tile7.plotLegend.label0": "Connection History.ipynb",
+      "tile8.title": "CALIBRATION FORECAST",
+      "tile8.xAxisLabel": "X Axis",
+      "tile8.yAxisLabel": "Y Axis",
+      "tile8.plotLegend.label0": "Calibration Forecast.ipynb",
+      "tile9.title": "ASSET UTILIZATION",
+      "tile9.xAxisLabel": "X Axis",
+      "tile9.yAxisLabel": "Y Axis",
+      "tile9.plotLegend.label0": "Asset Utilization.ipynb",
+      "tile10.title": "SYSTEM UTILIZATION",
+      "tile10.xAxisLabel": "X Axis",
+      "tile10.yAxisLabel": "Y Axis",
+      "tile10.plotLegend.label0": "Asset Utilization.ipynb"
+    },
+    "de": {
+      "tile1.title": "HARDWAREPRODUKTE",
+      "tile1.plotLegend.label0": "Verbunden",
+      "tile1.plotLegend.label1": "Nicht verbunden",
+      "tile2.title": "KALIBRIERTE HARDWAREPRODUKTE",
+      "tile2.plotLegend.label0": "OK",
+      "tile2.plotLegend.label1": "In Kürze fällig",
+      "tile2.plotLegend.label2": "Überschritten",
+      "tile3.title": "EMPFOHLENES KALIBRIERDATUM ÜBERSCHRITTEN",
+      "tile3.units": "",
+      "tile4.title": "KALIBRIERUNG IN KÜRZE FÄLLIG",
+      "tile4.units": "",
+      "tile5.title": "VERBUNDEN",
+      "tile5.units": "",
+      "tile6.title": "NICHT VERBUNDEN",
+      "tile6.units": "",
+      "tile7.title": "VERBINDUNGSHISTORIE",
+      "tile7.xAxisLabel": "x-Achse",
+      "tile7.yAxisLabel": "y-Achse",
+      "tile7.plotLegend.label0": "Connection History.ipynb",
+      "tile8.title": "KALIBRIERPROGNOSE",
+      "tile8.xAxisLabel": "x-Achse",
+      "tile8.yAxisLabel": "y-Achse",
+      "tile8.plotLegend.label0": "Calibration Forecast.ipynb",
+      "tile9.title": "HARDWAREPRODUKTE-NUTZUNG",
+      "tile9.xAxisLabel": "x-Achse",
+      "tile9.yAxisLabel": "y-Achse",
+      "tile9.plotLegend.label0": "Asset Utilization.ipynb",
+      "tile10.title": "SYSTEMNUTZUNG",
+      "tile10.xAxisLabel": "x-Achse",
+      "tile10.yAxisLabel": "y-Achse",
+      "tile10.plotLegend.label0": "Asset Utilization.ipynb"
+    },
+    "zh": {
+      "tile1.title": "设备",
+      "tile1.plotLegend.label0": "已连接",
+      "tile1.plotLegend.label1": "已断开",
+      "tile2.title": "已校准的设备",
+      "tile2.plotLegend.label0": "正常",
+      "tile2.plotLegend.label1": "临近",
+      "tile2.plotLegend.label2": "已过",
+      "tile3.title": "已过推荐校准日期",
+      "tile3.units": "",
+      "tile4.title": "临近校准日期",
+      "tile4.units": "",
+      "tile5.title": "已连接",
+      "tile5.units": "",
+      "tile6.title": "已断开",
+      "tile6.units": "",
+      "tile7.title": "连接历史",
+      "tile7.xAxisLabel": "X轴",
+      "tile7.yAxisLabel": "Y轴",
+      "tile7.plotLegend.label0": "Connection History.ipynb",
+      "tile8.title": "校准预测",
+      "tile8.xAxisLabel": "X轴",
+      "tile8.yAxisLabel": "Y轴",
+      "tile8.plotLegend.label0": "Calibration Forecast.ipynb",
+      "tile9.title": "整体设备使用率",
+      "tile9.xAxisLabel": "X轴",
+      "tile9.yAxisLabel": "Y轴",
+      "tile9.plotLegend.label0": "Asset Utilization.ipynb",
+      "tile10.title": "整体系统使用率",
+      "tile10.xAxisLabel": "X轴",
+      "tile10.yAxisLabel": "Y轴",
+      "tile10.plotLegend.label0": "Asset Utilization.ipynb"
+    },
+    "ja": {
+      "tile1.title": "資産",
+      "tile1.plotLegend.label0": "接続済み",
+      "tile1.plotLegend.label1": "接続解除",
+      "tile2.title": "校正済み資産",
+      "tile2.plotLegend.label0": "正常",
+      "tile2.plotLegend.label1": "間近",
+      "tile2.plotLegend.label2": "超過",
+      "tile3.title": "推奨校正期日を超過",
+      "tile3.units": "",
+      "tile4.title": "推奨校正期日が間近",
+      "tile4.units": "",
+      "tile5.title": "接続済み",
+      "tile5.units": "",
+      "tile6.title": "接続解除",
+      "tile6.units": "",
+      "tile7.title": "接続履歴",
+      "tile7.xAxisLabel": "X軸",
+      "tile7.yAxisLabel": "Y軸",
+      "tile7.plotLegend.label0": "Connection History.ipynb",
+      "tile8.title": "校正予測",
+      "tile8.xAxisLabel": "X軸",
+      "tile8.yAxisLabel": "Y軸",
+      "tile8.plotLegend.label0": "Calibration Forecast.ipynb",
+      "tile9.title": "資産全体の利用率",
+      "tile9.xAxisLabel": "X軸",
+      "tile9.yAxisLabel": "Y軸",
+      "tile9.plotLegend.label0": "Asset Utilization.ipynb",
+      "tile10.title": "システム全体の利用率",
+      "tile10.xAxisLabel": "X軸",
+      "tile10.yAxisLabel": "Y軸",
+      "tile10.plotLegend.label0": "Asset Utilization.ipynb"
+    }
+  },
+  "models": [
+    {
+      "name": "aps1",
+      "type": "adaptivePanelState",
+      "x": "NaN",
+      "y": "NaN",
+      "width": "NaN",
+      "height": "NaN",
+      "attributes": [
+        { "prefix": "aps" },
+        { "size": "12" },
+        { "panelHeight": "1200" }
+      ],
+      "models": [
+        {
+          "name": "psi232",
+          "type": "",
+          "x": "2",
+          "y": "0",
+          "width": "357",
+          "height": "405.625",
+          "attributes": [
+            { "prefix": "psi" },
+            { "matchingName": "tile1" },
+            { "columnRow": "%5B0%2C0%5D" },
+            { "gridSpan": "%5B3%2C4%5D" }
+          ],
+          "bindings": []
+        },
+        {
+          "name": "psi233",
+          "type": "",
+          "x": "363",
+          "y": "0",
+          "width": "357",
+          "height": "405.625",
+          "attributes": [
+            { "prefix": "psi" },
+            { "matchingName": "tile2" },
+            { "columnRow": "%5B3%2C0%5D" },
+            { "gridSpan": "%5B3%2C4%5D" }
+          ],
+          "bindings": []
+        },
+        {
+          "name": "psi234",
+          "type": "",
+          "x": "724",
+          "y": "0",
+          "width": "357",
+          "height": "200.8125",
+          "attributes": [
+            { "prefix": "psi" },
+            { "matchingName": "tile3" },
+            { "columnRow": "%5B6%2C0%5D" },
+            { "gridSpan": "%5B3%2C2%5D" }
+          ],
+          "bindings": []
+        },
+        {
+          "name": "psi235",
+          "type": "",
+          "x": "1085",
+          "y": "0",
+          "width": "357",
+          "height": "200.8125",
+          "attributes": [
+            { "prefix": "psi" },
+            { "matchingName": "tile4" },
+            { "columnRow": "%5B9%2C0%5D" },
+            { "gridSpan": "%5B3%2C2%5D" }
+          ],
+          "bindings": []
+        },
+        {
+          "name": "psi236",
+          "type": "",
+          "x": "724",
+          "y": "204.8125",
+          "width": "357",
+          "height": "200.8125",
+          "attributes": [
+            { "prefix": "psi" },
+            { "matchingName": "tile5" },
+            { "columnRow": "%5B6%2C2%5D" },
+            { "gridSpan": "%5B3%2C2%5D" }
+          ],
+          "bindings": []
+        },
+        {
+          "name": "psi237",
+          "type": "",
+          "x": "1085",
+          "y": "204.8125",
+          "width": "357",
+          "height": "200.8125",
+          "attributes": [
+            { "prefix": "psi" },
+            { "matchingName": "tile6" },
+            { "columnRow": "%5B9%2C2%5D" },
+            { "gridSpan": "%5B3%2C2%5D" }
+          ],
+          "bindings": []
+        },
+        {
+          "name": "psi238",
+          "type": "",
+          "x": "2",
+          "y": "409.625",
+          "width": "718",
+          "height": "405.625",
+          "attributes": [
+            { "prefix": "psi" },
+            { "matchingName": "tile7" },
+            { "columnRow": "%5B0%2C4%5D" },
+            { "gridSpan": "%5B6%2C4%5D" }
+          ],
+          "bindings": []
+        },
+        {
+          "name": "psi239",
+          "type": "",
+          "x": "724",
+          "y": "409.625",
+          "width": "718",
+          "height": "405.625",
+          "attributes": [
+            { "prefix": "psi" },
+            { "matchingName": "tile8" },
+            { "columnRow": "%5B6%2C4%5D" },
+            { "gridSpan": "%5B6%2C4%5D" }
+          ],
+          "bindings": []
+        },
+        {
+          "name": "psi240",
+          "type": "",
+          "x": "2",
+          "y": "819.25",
+          "width": "718",
+          "height": "405.625",
+          "attributes": [
+            { "prefix": "psi" },
+            { "matchingName": "tile9" },
+            { "columnRow": "%5B0%2C8%5D" },
+            { "gridSpan": "%5B6%2C4%5D" }
+          ],
+          "bindings": []
+        },
+        {
+          "name": "psi241",
+          "type": "",
+          "x": "724",
+          "y": "819.25",
+          "width": "718",
+          "height": "405.625",
+          "attributes": [
+            { "prefix": "psi" },
+            { "matchingName": "tile10" },
+            { "columnRow": "%5B6%2C8%5D" },
+            { "gridSpan": "%5B6%2C4%5D" }
+          ],
+          "bindings": []
+        }
+      ]
+    },
+    {
+      "name": "aps2",
+      "type": "adaptivePanelState",
+      "x": "NaN",
+      "y": "NaN",
+      "width": "NaN",
+      "height": "NaN",
+      "attributes": [
+        { "prefix": "aps" },
+        { "size": "6" },
+        { "panelHeight": "0" }
+      ],
+      "models": [
+        {
+          "name": "psi50",
+          "type": "",
+          "x": "2",
+          "y": "0",
+          "width": "357",
+          "height": "405.625",
+          "attributes": [
+            { "prefix": "psi" },
+            { "matchingName": "tile1" },
+            { "columnRow": "%5B0%2C0%5D" },
+            { "gridSpan": "%5B3%2C4%5D" }
+          ],
+          "bindings": []
+        },
+        {
+          "name": "psi51",
+          "type": "",
+          "x": "363",
+          "y": "0",
+          "width": "357",
+          "height": "405.625",
+          "attributes": [
+            { "prefix": "psi" },
+            { "matchingName": "tile2" },
+            { "columnRow": "%5B3%2C0%5D" },
+            { "gridSpan": "%5B3%2C4%5D" }
+          ],
+          "bindings": []
+        },
+        {
+          "name": "psi52",
+          "type": "",
+          "x": "2",
+          "y": "409.625",
+          "width": "357",
+          "height": "200.8125",
+          "attributes": [
+            { "prefix": "psi" },
+            { "matchingName": "tile3" },
+            { "columnRow": "%5B0%2C4%5D" },
+            { "gridSpan": "%5B3%2C2%5D" }
+          ],
+          "bindings": []
+        },
+        {
+          "name": "psi53",
+          "type": "",
+          "x": "363",
+          "y": "409.625",
+          "width": "357",
+          "height": "200.8125",
+          "attributes": [
+            { "prefix": "psi" },
+            { "matchingName": "tile4" },
+            { "columnRow": "%5B3%2C4%5D" },
+            { "gridSpan": "%5B3%2C2%5D" }
+          ],
+          "bindings": []
+        },
+        {
+          "name": "psi54",
+          "type": "",
+          "x": "2",
+          "y": "614.4375",
+          "width": "357",
+          "height": "200.8125",
+          "attributes": [
+            { "prefix": "psi" },
+            { "matchingName": "tile5" },
+            { "columnRow": "%5B0%2C6%5D" },
+            { "gridSpan": "%5B3%2C2%5D" }
+          ],
+          "bindings": []
+        },
+        {
+          "name": "psi55",
+          "type": "",
+          "x": "363",
+          "y": "614.4375",
+          "width": "357",
+          "height": "200.8125",
+          "attributes": [
+            { "prefix": "psi" },
+            { "matchingName": "tile6" },
+            { "columnRow": "%5B3%2C6%5D" },
+            { "gridSpan": "%5B3%2C2%5D" }
+          ],
+          "bindings": []
+        },
+        {
+          "name": "psi56",
+          "type": "",
+          "x": "2",
+          "y": "819.25",
+          "width": "718",
+          "height": "405.625",
+          "attributes": [
+            { "prefix": "psi" },
+            { "matchingName": "tile7" },
+            { "columnRow": "%5B0%2C8%5D" },
+            { "gridSpan": "%5B6%2C4%5D" }
+          ],
+          "bindings": []
+        },
+        {
+          "name": "psi57",
+          "type": "",
+          "x": "2",
+          "y": "1228.875",
+          "width": "718",
+          "height": "405.625",
+          "attributes": [
+            { "prefix": "psi" },
+            { "matchingName": "tile8" },
+            { "columnRow": "%5B0%2C12%5D" },
+            { "gridSpan": "%5B6%2C4%5D" }
+          ],
+          "bindings": []
+        },
+        {
+          "name": "psi58",
+          "type": "",
+          "x": "2",
+          "y": "2048.125",
+          "width": "718",
+          "height": "405.625",
+          "attributes": [
+            { "prefix": "psi" },
+            { "matchingName": "tile9" },
+            { "columnRow": "%5B0%2C20%5D" },
+            { "gridSpan": "%5B6%2C4%5D" }
+          ],
+          "bindings": []
+        },
+        {
+          "name": "psi59",
+          "type": "",
+          "x": "2",
+          "y": "1638.5",
+          "width": "718",
+          "height": "405.625",
+          "attributes": [
+            { "prefix": "psi" },
+            { "matchingName": "tile10" },
+            { "columnRow": "%5B0%2C16%5D" },
+            { "gridSpan": "%5B6%2C4%5D" }
+          ],
+          "bindings": []
+        }
+      ]
+    },
+    {
+      "name": "aps3",
+      "type": "adaptivePanelState",
+      "x": "NaN",
+      "y": "NaN",
+      "width": "NaN",
+      "height": "NaN",
+      "attributes": [
+        { "prefix": "aps" },
+        { "size": "1" },
+        { "panelHeight": "0" }
+      ],
+      "models": [
+        {
+          "name": "psi70",
+          "type": "",
+          "x": "2",
+          "y": "0",
+          "width": "116.33333333333333",
+          "height": "405.625",
+          "attributes": [
+            { "prefix": "psi" },
+            { "matchingName": "tile1" },
+            { "columnRow": "%5B0%2C0%5D" },
+            { "gridSpan": "%5B1%2C4%5D" }
+          ],
+          "bindings": []
+        },
+        {
+          "name": "psi71",
+          "type": "",
+          "x": "2",
+          "y": "409.625",
+          "width": "116.33333333333333",
+          "height": "405.625",
+          "attributes": [
+            { "prefix": "psi" },
+            { "matchingName": "tile2" },
+            { "columnRow": "%5B0%2C4%5D" },
+            { "gridSpan": "%5B1%2C4%5D" }
+          ],
+          "bindings": []
+        },
+        {
+          "name": "psi72",
+          "type": "",
+          "x": "2",
+          "y": "819.25",
+          "width": "116.33333333333333",
+          "height": "200.8125",
+          "attributes": [
+            { "prefix": "psi" },
+            { "matchingName": "tile3" },
+            { "columnRow": "%5B0%2C8%5D" },
+            { "gridSpan": "%5B1%2C2%5D" }
+          ],
+          "bindings": []
+        },
+        {
+          "name": "psi73",
+          "type": "",
+          "x": "2",
+          "y": "1024.0625",
+          "width": "116.33333333333333",
+          "height": "200.8125",
+          "attributes": [
+            { "prefix": "psi" },
+            { "matchingName": "tile4" },
+            { "columnRow": "%5B0%2C10%5D" },
+            { "gridSpan": "%5B1%2C2%5D" }
+          ],
+          "bindings": []
+        },
+        {
+          "name": "psi74",
+          "type": "",
+          "x": "2",
+          "y": "1228.875",
+          "width": "116.33333333333333",
+          "height": "200.8125",
+          "attributes": [
+            { "prefix": "psi" },
+            { "matchingName": "tile5" },
+            { "columnRow": "%5B0%2C12%5D" },
+            { "gridSpan": "%5B1%2C2%5D" }
+          ],
+          "bindings": []
+        },
+        {
+          "name": "psi75",
+          "type": "",
+          "x": "2",
+          "y": "1433.6875",
+          "width": "116.33333333333333",
+          "height": "200.8125",
+          "attributes": [
+            { "prefix": "psi" },
+            { "matchingName": "tile6" },
+            { "columnRow": "%5B0%2C14%5D" },
+            { "gridSpan": "%5B1%2C2%5D" }
+          ],
+          "bindings": []
+        },
+        {
+          "name": "psi76",
+          "type": "",
+          "x": "2",
+          "y": "1638.5",
+          "width": "116.33333333333333",
+          "height": "200.8125",
+          "attributes": [
+            { "prefix": "psi" },
+            { "matchingName": "tile7" },
+            { "columnRow": "%5B0%2C16%5D" },
+            { "gridSpan": "%5B1%2C2%5D" }
+          ],
+          "bindings": []
+        },
+        {
+          "name": "psi77",
+          "type": "",
+          "x": "2",
+          "y": "1843.3125",
+          "width": "116.33333333333333",
+          "height": "200.8125",
+          "attributes": [
+            { "prefix": "psi" },
+            { "matchingName": "tile8" },
+            { "columnRow": "%5B0%2C18%5D" },
+            { "gridSpan": "%5B1%2C2%5D" }
+          ],
+          "bindings": []
+        },
+        {
+          "name": "psi78",
+          "type": "",
+          "x": "2",
+          "y": "2252.9375",
+          "width": "116.33333333333333",
+          "height": "200.8125",
+          "attributes": [
+            { "prefix": "psi" },
+            { "matchingName": "tile9" },
+            { "columnRow": "%5B0%2C22%5D" },
+            { "gridSpan": "%5B1%2C2%5D" }
+          ],
+          "bindings": []
+        },
+        {
+          "name": "psi79",
+          "type": "",
+          "x": "2",
+          "y": "2048.125",
+          "width": "116.33333333333333",
+          "height": "200.8125",
+          "attributes": [
+            { "prefix": "psi" },
+            { "matchingName": "tile10" },
+            { "columnRow": "%5B0%2C20%5D" },
+            { "gridSpan": "%5B1%2C2%5D" }
+          ],
+          "bindings": []
+        }
+      ]
+    },
+    {
+      "name": "tile1",
+      "type": "pie",
+      "x": "2",
+      "y": "0",
+      "width": "357",
+      "height": "405.625",
+      "attributes": [
+        { "prefix": "tile" },
+        { "title": { "localizationKey": "tile1.title" } },
+        { "multiDatasource": "%5B%7B%22label%22%3A%22Active%20assets%22%2C%22value%22%3A%22%7B%5C%22type%5C%22%3A%5C%22asset%5C%22%2C%5C%22binding%5C%22%3A%5C%22%7B%5C%5C%5C%22name%5C%5C%5C%22%3A%5C%5C%5C%22Active%20assets%5C%5C%5C%22%2C%5C%5C%5C%22value%5C%5C%5C%22%3A%5C%5C%5C%22activeAssets%5C%5C%5C%22%7D%5C%22%7D%22%7D%2C%7B%22label%22%3A%22Inactive%20assets%22%2C%22value%22%3A%22%7B%5C%22type%5C%22%3A%5C%22asset%5C%22%2C%5C%22binding%5C%22%3A%5C%22%7B%5C%5C%5C%22name%5C%5C%5C%22%3A%5C%5C%5C%22Inactive%20assets%5C%5C%5C%22%2C%5C%5C%5C%22value%5C%5C%5C%22%3A%5C%5C%5C%22inactiveAssets%5C%5C%5C%22%7D%5C%22%7D%22%7D%5D" },
+        { "plotLegend": "%5B%7B%22label%22%3A%7B%22localizationKey%22%3A%22tile1.plotLegend.label0%22%7D%2C%22color%22%3A%22%2302B26A%22%7D%2C%7B%22label%22%3A%7B%22localizationKey%22%3A%22tile1.plotLegend.label1%22%7D%2C%22color%22%3A%22%23009FF5%22%7D%5D" },
+        { "navigationURLEnabled": "true" },
+        { "zIndex": "0" },
+        { "columnRow": "%5B0%2C0%5D" },
+        { "gridSpan": "%5B3%2C4%5D" },
+        { "navigationURL": "%23assetmanager/assets" },
+        { "navigationStyle": "tile" }
+      ],
+      "bindings": [
+        {
+          "value": [
+            {
+              "type": "asset",
+              "binding": "{\"name\":\"Active assets\",\"value\":\"activeAssets\"}"
+            },
+            {
+              "type": "asset",
+              "binding": "{\"name\":\"Inactive assets\",\"value\":\"inactiveAssets\"}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "tile2",
+      "type": "pie",
+      "x": "363",
+      "y": "0",
+      "width": "357",
+      "height": "405.625",
+      "attributes": [
+        { "prefix": "tile" },
+        { "title": { "localizationKey": "tile2.title" } },
+        { "multiDatasource": "%5B%7B%22label%22%3A%22Assets%20not%20approaching%20calibration%22%2C%22value%22%3A%22%7B%5C%22type%5C%22%3A%5C%22asset%5C%22%2C%5C%22binding%5C%22%3A%5C%22%7B%5C%5C%5C%22name%5C%5C%5C%22%3A%5C%5C%5C%22Assets%20not%20approaching%20calibration%5C%5C%5C%22%2C%5C%5C%5C%22value%5C%5C%5C%22%3A%5C%5C%5C%22okCalAssets%5C%5C%5C%22%7D%5C%22%7D%22%7D%2C%7B%22label%22%3A%22Assets%20approaching%20calibration%22%2C%22value%22%3A%22%7B%5C%22type%5C%22%3A%5C%22asset%5C%22%2C%5C%22binding%5C%22%3A%5C%22%7B%5C%5C%5C%22name%5C%5C%5C%22%3A%5C%5C%5C%22Assets%20approaching%20calibration%5C%5C%5C%22%2C%5C%5C%5C%22value%5C%5C%5C%22%3A%5C%5C%5C%22nearCalAssets%5C%5C%5C%22%7D%5C%22%7D%22%7D%2C%7B%22label%22%3A%22Assets%20requiring%20calibration%22%2C%22value%22%3A%22%7B%5C%22type%5C%22%3A%5C%22asset%5C%22%2C%5C%22binding%5C%22%3A%5C%22%7B%5C%5C%5C%22name%5C%5C%5C%22%3A%5C%5C%5C%22Assets%20requiring%20calibration%5C%5C%5C%22%2C%5C%5C%5C%22value%5C%5C%5C%22%3A%5C%5C%5C%22outOfCalAssets%5C%5C%5C%22%7D%5C%22%7D%22%7D%5D" },
+        { "plotLegend": "%5B%7B%22label%22%3A%7B%22localizationKey%22%3A%22tile2.plotLegend.label0%22%7D%2C%22color%22%3A%22%2302B26A%22%7D%2C%7B%22label%22%3A%7B%22localizationKey%22%3A%22tile2.plotLegend.label1%22%7D%2C%22color%22%3A%22%230080FB%22%7D%2C%7B%22label%22%3A%7B%22localizationKey%22%3A%22tile2.plotLegend.label2%22%7D%2C%22color%22%3A%22%23FB2A00%22%7D%5D" },
+        { "navigationURLEnabled": "true" },
+        { "zIndex": "1" },
+        { "columnRow": "%5B3%2C0%5D" },
+        { "gridSpan": "%5B3%2C4%5D" },
+        { "navigationURL": "%23assetmanager/calibratedassets" },
+        { "navigationStyle": "tile" }
+      ],
+      "bindings": [
+        {
+          "value": [
+            {
+              "type": "asset",
+              "binding": "{\"name\":\"Assets not approaching calibration\",\"value\":\"okCalAssets\"}"
+            },
+            {
+              "type": "asset",
+              "binding": "{\"name\":\"Assets approaching calibration\",\"value\":\"nearCalAssets\"}"
+            },
+            {
+              "type": "asset",
+              "binding": "{\"name\":\"Assets requiring calibration\",\"value\":\"outOfCalAssets\"}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "tile3",
+      "type": "count",
+      "x": "724",
+      "y": "0",
+      "width": "357",
+      "height": "200.8125",
+      "attributes": [
+        { "prefix": "tile" },
+        { "title": { "localizationKey": "tile3.title" } },
+        { "units": { "localizationKey": "tile3.units" } },
+        { "unitsEnabled": "false" },
+        { "datasource": "%7B%22type%22%3A%22asset%22%2C%22binding%22%3A%22%7B%5C%22name%5C%22%3A%5C%22Assets%20requiring%20calibration%5C%22%2C%5C%22value%5C%22%3A%5C%22outOfCalAssets%5C%22%7D%22%7D" },
+        { "navigationURLEnabled": "true" },
+        { "zIndex": "2" },
+        { "columnRow": "%5B6%2C0%5D" },
+        { "gridSpan": "%5B3%2C2%5D" }
+      ],
+      "bindings": [
+        {
+          "value": [
+            {
+              "type": "asset",
+              "binding": "{\"name\":\"Assets requiring calibration\",\"value\":\"outOfCalAssets\"}"
+            }
+          ]
+        },
+        {
+          "navigationURL": [
+            {
+              "type": "asset",
+              "binding": {
+                "name": "Assets requiring calibration",
+                "binding": "#assetmanager/calibratedassets/filtered/calibrationStatus=past"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "tile4",
+      "type": "count",
+      "x": "1085",
+      "y": "0",
+      "width": "357",
+      "height": "200.8125",
+      "attributes": [
+        { "prefix": "tile" },
+        { "title": { "localizationKey": "tile4.title" } },
+        { "units": { "localizationKey": "tile4.units" } },
+        { "unitsEnabled": "false" },
+        { "datasource": "%7B%22type%22%3A%22asset%22%2C%22binding%22%3A%22%7B%5C%22name%5C%22%3A%5C%22Assets%20approaching%20calibration%5C%22%2C%5C%22value%5C%22%3A%5C%22nearCalAssets%5C%22%7D%22%7D" },
+        { "navigationURLEnabled": "true" },
+        { "zIndex": "3" },
+        { "columnRow": "%5B9%2C0%5D" },
+        { "gridSpan": "%5B3%2C2%5D" }
+      ],
+      "bindings": [
+        {
+          "value": [
+            {
+              "type": "asset",
+              "binding": "{\"name\":\"Assets approaching calibration\",\"value\":\"nearCalAssets\"}"
+            }
+          ]
+        },
+        {
+          "navigationURL": [
+            {
+              "type": "asset",
+              "binding": {
+                "name": "Assets approaching calibration",
+                "binding": "#assetmanager/calibratedassets/filtered/calibrationStatus=approaching"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "tile5",
+      "type": "count",
+      "x": "724",
+      "y": "204.8125",
+      "width": "357",
+      "height": "200.8125",
+      "attributes": [
+        { "prefix": "tile" },
+        { "title": { "localizationKey": "tile5.title" } },
+        { "units": { "localizationKey": "tile5.units" } },
+        { "unitsEnabled": "false" },
+        { "datasource": "%7B%22type%22%3A%22asset%22%2C%22binding%22%3A%22%7B%5C%22name%5C%22%3A%5C%22Active%20assets%5C%22%2C%5C%22value%5C%22%3A%5C%22activeAssets%5C%22%7D%22%7D" },
+        { "navigationURLEnabled": "true" },
+        { "zIndex": "4" },
+        { "columnRow": "%5B6%2C2%5D" },
+        { "gridSpan": "%5B3%2C2%5D" }
+      ],
+      "bindings": [
+        {
+          "value": [
+            {
+              "type": "asset",
+              "binding": "{\"name\":\"Active assets\",\"value\":\"activeAssets\"}"
+            }
+          ]
+        },
+        {
+          "navigationURL": [
+            {
+              "type": "asset",
+              "binding": {
+                "name": "Active assets",
+                "binding": "#assetmanager/assets/filtered/activeStatus=active"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "tile6",
+      "type": "count",
+      "x": "1085",
+      "y": "204.8125",
+      "width": "357",
+      "height": "200.8125",
+      "attributes": [
+        { "prefix": "tile" },
+        { "title": { "localizationKey": "tile6.title" } },
+        { "units": { "localizationKey": "tile6.units" } },
+        { "unitsEnabled": "false" },
+        { "datasource": "%7B%22type%22%3A%22asset%22%2C%22binding%22%3A%22%7B%5C%22name%5C%22%3A%5C%22Inactive%20assets%5C%22%2C%5C%22value%5C%22%3A%5C%22inactiveAssets%5C%22%7D%22%7D" },
+        { "navigationURLEnabled": "true" },
+        { "zIndex": "5" },
+        { "columnRow": "%5B9%2C2%5D" },
+        { "gridSpan": "%5B3%2C2%5D" }
+      ],
+      "bindings": [
+        {
+          "value": [
+            {
+              "type": "asset",
+              "binding": "{\"name\":\"Inactive assets\",\"value\":\"inactiveAssets\"}"
+            }
+          ]
+        },
+        {
+          "navigationURL": [
+            {
+              "type": "asset",
+              "binding": {
+                "name": "Inactive assets",
+                "binding": "#assetmanager/assets/filtered/activeStatus=notActive"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "tile7",
+      "type": "graph",
+      "x": "2",
+      "y": "409.625",
+      "width": "718",
+      "height": "405.625",
+      "attributes": [
+        { "prefix": "tile" },
+        { "title": { "localizationKey": "tile7.title" } },
+        { "multiDatasource": "%5B%7B%22label%22%3A%22Connection%20History.ipynb%22%2C%22value%22%3A%22%7B%5C%22type%5C%22%3A%5C%22notebook%5C%22%2C%5C%22binding%5C%22%3A%5C%22%7B%5C%5C%5C%22name%5C%5C%5C%22%3A%5C%5C%5C%22_shared/reports/Connection%20History.ipynb%5C%5C%5C%22%2C%5C%5C%5C%22executionInterval%5C%5C%5C%22%3A3600%2C%5C%5C%5C%22params%5C%5C%5C%22%3A%5B%7B%5C%5C%5C%22name%5C%5C%5C%22%3A%5C%5C%5C%22asset_filter%5C%5C%5C%22%2C%5C%5C%5C%22value%5C%5C%5C%22%3A%5C%5C%5C%22%5C%5C%5C%22%7D%2C%7B%5C%5C%5C%22name%5C%5C%5C%22%3A%5C%5C%5C%22end_date%5C%5C%5C%22%2C%5C%5C%5C%22value%5C%5C%5C%22%3A%5C%5C%5C%22%5C%5C%5C%22%7D%2C%7B%5C%5C%5C%22name%5C%5C%5C%22%3A%5C%5C%5C%22group_by%5C%5C%5C%22%2C%5C%5C%5C%22value%5C%5C%5C%22%3A%5C%5C%5C%22DAY%5C%5C%5C%22%7D%2C%7B%5C%5C%5C%22name%5C%5C%5C%22%3A%5C%5C%5C%22query_by%5C%5C%5C%22%2C%5C%5C%5C%22value%5C%5C%5C%22%3A%5C%5C%5C%22%5C%5C%5C%22%7D%2C%7B%5C%5C%5C%22name%5C%5C%5C%22%3A%5C%5C%5C%22start_date%5C%5C%5C%22%2C%5C%5C%5C%22value%5C%5C%5C%22%3A%5C%5C%5C%22%5C%5C%5C%22%7D%2C%7B%5C%5C%5C%22name%5C%5C%5C%22%3A%5C%5C%5C%22timespan%5C%5C%5C%22%2C%5C%5C%5C%22value%5C%5C%5C%22%3A%5C%5C%5C%2230%5C%5C%5C%22%7D%5D%7D%5C%22%7D%22%7D%5D" },
+        { "renderStyle": "line" },
+        { "xAxisLabel": { "localizationKey": "tile7.xAxisLabel" } },
+        { "yAxisLabel": { "localizationKey": "tile7.yAxisLabel" } },
+        { "yAxisAutoScale": "none" },
+        { "yAxisMin": "0" },
+        { "yAxisMax": "100" },
+        { "windowSize": "3600" },
+        { "navigationURLEnabled": "true" },
+        { "plotLegend": "%5B%7B%22label%22%3A%7B%22localizationKey%22%3A%22tile7.plotLegend.label0%22%7D%2C%22color%22%3A%22%23009FF5%22%7D%5D" },
+        { "zIndex": "6" },
+        { "columnRow": "%5B0%2C4%5D" },
+        { "gridSpan": "%5B6%2C4%5D" },
+        { "plotLegendEnabled": "false" },
+        { "navigationURL": "%23assetmanager/reports/config/notebookPath%3D_shared%252Freports%252FConnection%2520History.ipynb%26filter%255BTimespan%255D%255B0%255D%255BqueryOperandUnit%255D%3DDAYS%26filter%255BTimespan%255D%255B0%255D%255BqueryOperandValue%255D%3D30%26filter%255BTimespan%255D%255B0%255D%255BqueryOperator%255D%3DLESS_THAN_OR_EQUAL%26groupBy%3DDAY" },
+        { "navigationStyle": "tile" },
+        { "plotLegendEditable": "false" },
+        { "plotLegendVisible": "false" }
+      ],
+      "bindings": [
+        {
+          "value": [
+            {
+              "type": "notebook",
+              "binding": "{\"name\":\"_shared/reports/Connection History.ipynb\",\"executionInterval\":3600,\"params\":[{\"name\":\"asset_filter\",\"value\":\"\"},{\"name\":\"end_date\",\"value\":\"\"},{\"name\":\"group_by\",\"value\":\"DAY\"},{\"name\":\"query_by\",\"value\":\"\"},{\"name\":\"start_date\",\"value\":\"\"},{\"name\":\"timespan\",\"value\":\"30\"}]}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "tile8",
+      "type": "graph",
+      "x": "724",
+      "y": "409.625",
+      "width": "718",
+      "height": "405.625",
+      "attributes": [
+        { "prefix": "tile" },
+        { "title": { "localizationKey": "tile8.title" } },
+        { "multiDatasource": "%5B%7B%22label%22%3A%22Calibration%20Forecast.ipynb%22%2C%22value%22%3A%22%7B%5C%22type%5C%22%3A%5C%22notebook%5C%22%2C%5C%22binding%5C%22%3A%5C%22%7B%5C%5C%5C%22name%5C%5C%5C%22%3A%5C%5C%5C%22_shared/reports/Calibration%20Forecast.ipynb%5C%5C%5C%22%2C%5C%5C%5C%22executionInterval%5C%5C%5C%22%3A3600%2C%5C%5C%5C%22params%5C%5C%5C%22%3A%5B%7B%5C%5C%5C%22name%5C%5C%5C%22%3A%5C%5C%5C%22end_date%5C%5C%5C%22%2C%5C%5C%5C%22value%5C%5C%5C%22%3A%5C%5C%5C%22%5C%5C%5C%22%7D%2C%7B%5C%5C%5C%22name%5C%5C%5C%22%3A%5C%5C%5C%22group_by%5C%5C%5C%22%2C%5C%5C%5C%22value%5C%5C%5C%22%3A%5C%5C%5C%22MONTH%5C%5C%5C%22%7D%2C%7B%5C%5C%5C%22name%5C%5C%5C%22%3A%5C%5C%5C%22query_by%5C%5C%5C%22%2C%5C%5C%5C%22value%5C%5C%5C%22%3A%5C%5C%5C%22%5C%5C%5C%22%7D%2C%7B%5C%5C%5C%22name%5C%5C%5C%22%3A%5C%5C%5C%22asset_filter%5C%5C%5C%22%2C%5C%5C%5C%22value%5C%5C%5C%22%3A%5C%5C%5C%22%5C%5C%5C%22%7D%2C%7B%5C%5C%5C%22name%5C%5C%5C%22%3A%5C%5C%5C%22start_date%5C%5C%5C%22%2C%5C%5C%5C%22value%5C%5C%5C%22%3A%5C%5C%5C%22%5C%5C%5C%22%7D%2C%7B%5C%5C%5C%22name%5C%5C%5C%22%3A%5C%5C%5C%22timespan%5C%5C%5C%22%2C%5C%5C%5C%22value%5C%5C%5C%22%3A%5C%5C%5C%22365%5C%5C%5C%22%7D%5D%7D%5C%22%7D%22%7D%5D" },
+        { "renderStyle": "line" },
+        { "xAxisLabel": { "localizationKey": "tile8.xAxisLabel" } },
+        { "yAxisLabel": { "localizationKey": "tile8.yAxisLabel" } },
+        { "yAxisAutoScale": "grow" },
+        { "yAxisMin": "0" },
+        { "yAxisMax": "0" },
+        { "windowSize": "3600" },
+        { "navigationURLEnabled": "true" },
+        { "plotLegend": "%5B%7B%22label%22%3A%7B%22localizationKey%22%3A%22tile8.plotLegend.label0%22%7D%2C%22color%22%3A%22%23009FF5%22%7D%5D" },
+        { "zIndex": "7" },
+        { "columnRow": "%5B6%2C4%5D" },
+        { "gridSpan": "%5B6%2C4%5D" },
+        { "plotLegendEnabled": "false" },
+        { "navigationURL": "%23assetmanager/reports/config/notebookPath%3D_shared%252Freports%252FCalibration%2520Forecast.ipynb%26filter%255BTimespan%255D%255B0%255D%255BqueryOperandUnit%255D%3DDAYS%26filter%255BTimespan%255D%255B0%255D%255BqueryOperandValue%255D%3D365%26filter%255BTimespan%255D%255B0%255D%255BqueryOperator%255D%3DLESS_THAN_OR_EQUAL%26groupBy%3DMONTH" },
+        { "navigationStyle": "tile" },
+        { "plotLegendEditable": "false" },
+        { "plotLegendVisible": "false" }
+      ],
+      "bindings": [
+        {
+          "value": [
+            {
+              "type": "notebook",
+              "binding": "{\"name\":\"_shared/reports/Calibration Forecast.ipynb\",\"executionInterval\":3600,\"params\":[{\"name\":\"end_date\",\"value\":\"\"},{\"name\":\"group_by\",\"value\":\"MONTH\"},{\"name\":\"query_by\",\"value\":\"\"},{\"name\":\"asset_filter\",\"value\":\"\"},{\"name\":\"start_date\",\"value\":\"\"},{\"name\":\"timespan\",\"value\":\"365\"}]}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "tile9",
+      "type": "graph",
+      "x": "2",
+      "y": "819.25",
+      "width": "718",
+      "height": "405.625",
+      "attributes": [
+        { "prefix": "tile" },
+        { "title": { "localizationKey": "tile9.title" } },
+        { "multiDatasource": "%5B%7B%22label%22%3A%22Asset%20Utilization.ipynb%22%2C%22value%22%3A%22%7B%5C%22type%5C%22%3A%5C%22notebook%5C%22%2C%5C%22binding%5C%22%3A%5C%22%7B%5C%5C%5C%22name%5C%5C%5C%22%3A%5C%5C%5C%22_shared/reports/Asset%20Utilization.ipynb%5C%5C%5C%22%2C%5C%5C%5C%22executionInterval%5C%5C%5C%22%3A3600%2C%5C%5C%5C%22params%5C%5C%5C%22%3A%5B%7B%5C%5C%5C%22name%5C%5C%5C%22%3A%5C%5C%5C%22asset_filter%5C%5C%5C%22%2C%5C%5C%5C%22value%5C%5C%5C%22%3A%5C%5C%5C%22%5C%5C%5C%22%7D%2C%7B%5C%5C%5C%22name%5C%5C%5C%22%3A%5C%5C%5C%22end_date%5C%5C%5C%22%2C%5C%5C%5C%22value%5C%5C%5C%22%3A%5C%5C%5C%22%5C%5C%5C%22%7D%2C%7B%5C%5C%5C%22name%5C%5C%5C%22%3A%5C%5C%5C%22group_by%5C%5C%5C%22%2C%5C%5C%5C%22value%5C%5C%5C%22%3A%5C%5C%5C%22DAY%5C%5C%5C%22%7D%2C%7B%5C%5C%5C%22name%5C%5C%5C%22%3A%5C%5C%5C%22start_date%5C%5C%5C%22%2C%5C%5C%5C%22value%5C%5C%5C%22%3A%5C%5C%5C%22%5C%5C%5C%22%7D%2C%7B%5C%5C%5C%22name%5C%5C%5C%22%3A%5C%5C%5C%22timespan%5C%5C%5C%22%2C%5C%5C%5C%22value%5C%5C%5C%22%3A%5C%5C%5C%2230%5C%5C%5C%22%7D%2C%7B%5C%5C%5C%22name%5C%5C%5C%22%3A%5C%5C%5C%22utilization_filter%5C%5C%5C%22%2C%5C%5C%5C%22value%5C%5C%5C%22%3A%5C%5C%5C%22%5C%5C%5C%22%7D%5D%7D%5C%22%7D%22%7D%5D" },
+        { "renderStyle": "line" },
+        { "xAxisLabel": { "localizationKey": "tile9.xAxisLabel" } },
+        { "yAxisLabel": { "localizationKey": "tile9.yAxisLabel" } },
+        { "yAxisAutoScale": "none" },
+        { "yAxisMin": "0" },
+        { "yAxisMax": "100" },
+        { "windowSize": "3600" },
+        { "navigationURLEnabled": "true" },
+        { "plotLegend": "%5B%7B%22label%22%3A%7B%22localizationKey%22%3A%22tile9.plotLegend.label0%22%7D%2C%22color%22%3A%22%23009FF5%22%7D%5D" },
+        { "zIndex": "8" },
+        { "columnRow": "%5B0%2C8%5D" },
+        { "gridSpan": "%5B6%2C4%5D" },
+        { "plotLegendEnabled": "false" },
+        { "navigationURL": "%23assetmanager/reports/config/notebookPath%3D_shared%252Freports%252FAsset%2520Utilization.ipynb%26filter%255BTimespan%255D%255B0%255D%255BqueryOperandUnit%255D%3DDAYS%26filter%255BTimespan%255D%255B0%255D%255BqueryOperandValue%255D%3D30%26filter%255BTimespan%255D%255B0%255D%255BqueryOperator%255D%3DLESS_THAN_OR_EQUAL%26groupBy%3DDAY" },
+        { "navigationStyle": "tile" },
+        { "plotLegendEditable": "false" },
+        { "plotLegendVisible": "false" }
+      ],
+      "bindings": [
+        {
+          "value": [
+            {
+              "type": "notebook",
+              "binding": "{\"name\":\"_shared/reports/Asset Utilization.ipynb\",\"executionInterval\":3600,\"params\":[{\"name\":\"asset_filter\",\"value\":\"\"},{\"name\":\"end_date\",\"value\":\"\"},{\"name\":\"group_by\",\"value\":\"DAY\"},{\"name\":\"start_date\",\"value\":\"\"},{\"name\":\"timespan\",\"value\":\"30\"},{\"name\":\"utilization_filter\",\"value\":\"\"}]}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "tile10",
+      "type": "graph",
+      "x": "724",
+      "y": "819.25",
+      "width": "718",
+      "height": "405.625",
+      "attributes": [
+        { "prefix": "tile" },
+        { "title": { "localizationKey": "tile10.title" } },
+        { "multiDatasource": "%5B%7B%22label%22%3A%22Asset%20Utilization.ipynb%22%2C%22value%22%3A%22%7B%5C%22type%5C%22%3A%5C%22notebook%5C%22%2C%5C%22binding%5C%22%3A%5C%22%7B%5C%5C%5C%22name%5C%5C%5C%22%3A%5C%5C%5C%22_shared/reports/Asset%20Utilization.ipynb%5C%5C%5C%22%2C%5C%5C%5C%22executionInterval%5C%5C%5C%22%3A3600%2C%5C%5C%5C%22params%5C%5C%5C%22%3A%5B%7B%5C%5C%5C%22name%5C%5C%5C%22%3A%5C%5C%5C%22asset_filter%5C%5C%5C%22%2C%5C%5C%5C%22value%5C%5C%5C%22%3A%5C%5C%5C%22IsSystemController%20%3D%20%5C%5C%5C%5C%5C%5C%5C%22True%5C%5C%5C%5C%5C%5C%5C%22%5C%5C%5C%22%7D%2C%7B%5C%5C%5C%22name%5C%5C%5C%22%3A%5C%5C%5C%22end_date%5C%5C%5C%22%2C%5C%5C%5C%22value%5C%5C%5C%22%3A%5C%5C%5C%22%5C%5C%5C%22%7D%2C%7B%5C%5C%5C%22name%5C%5C%5C%22%3A%5C%5C%5C%22group_by%5C%5C%5C%22%2C%5C%5C%5C%22value%5C%5C%5C%22%3A%5C%5C%5C%22DAY%5C%5C%5C%22%7D%2C%7B%5C%5C%5C%22name%5C%5C%5C%22%3A%5C%5C%5C%22start_date%5C%5C%5C%22%2C%5C%5C%5C%22value%5C%5C%5C%22%3A%5C%5C%5C%22%5C%5C%5C%22%7D%2C%7B%5C%5C%5C%22name%5C%5C%5C%22%3A%5C%5C%5C%22timespan%5C%5C%5C%22%2C%5C%5C%5C%22value%5C%5C%5C%22%3A%5C%5C%5C%2230%5C%5C%5C%22%7D%2C%7B%5C%5C%5C%22name%5C%5C%5C%22%3A%5C%5C%5C%22utilization_filter%5C%5C%5C%22%2C%5C%5C%5C%22value%5C%5C%5C%22%3A%5C%5C%5C%22%5C%5C%5C%22%7D%5D%7D%5C%22%7D%22%7D%5D" },
+        { "renderStyle": "line" },
+        { "xAxisLabel": { "localizationKey": "tile10.xAxisLabel" } },
+        { "yAxisLabel": { "localizationKey": "tile10.yAxisLabel" } },
+        { "yAxisAutoScale": "none" },
+        { "yAxisMin": "0" },
+        { "yAxisMax": "100" },
+        { "windowSize": "3600" },
+        { "navigationURLEnabled": "true" },
+        { "plotLegend": "%5B%7B%22label%22%3A%7B%22localizationKey%22%3A%22tile10.plotLegend.label0%22%7D%2C%22color%22%3A%22%23009FF5%22%7D%5D" },
+        { "zIndex": "9" },
+        { "columnRow": "%5B6%2C8%5D" },
+        { "gridSpan": "%5B6%2C4%5D" },
+        { "plotLegendEnabled": "false" },
+        { "navigationURL": "%23assetmanager/reports/config/notebookPath%3D_shared%252Freports%252FAsset%2520Utilization.ipynb%26filter%255BIsSystemController%255D%255B0%255D%255BqueryOperandValue%255D%3DTrue%26filter%255BIsSystemController%255D%255B0%255D%255BqueryOperator%255D%3DEQUALS%26filter%255BTimespan%255D%255B0%255D%255BqueryOperandUnit%255D%3DDAYS%26filter%255BTimespan%255D%255B0%255D%255BqueryOperandValue%255D%3D30%26filter%255BTimespan%255D%255B0%255D%255BqueryOperator%255D%3DLESS_THAN_OR_EQUAL%26groupBy%3DDAY" },
+        { "navigationStyle": "tile" },
+        { "plotLegendEditable": "false" },
+        { "plotLegendVisible": "false" }
+      ],
+      "bindings": [
+        {
+          "value": [
+            {
+              "type": "notebook",
+              "binding": "{\"name\":\"_shared/reports/Asset Utilization.ipynb\",\"executionInterval\":3600,\"params\":[{\"name\":\"asset_filter\",\"value\":\"IsSystemController = \\\"True\\\"\"},{\"name\":\"end_date\",\"value\":\"\"},{\"name\":\"group_by\",\"value\":\"DAY\"},{\"name\":\"start_date\",\"value\":\"\"},{\"name\":\"timespan\",\"value\":\"30\"},{\"name\":\"utilization_filter\",\"value\":\"\"}]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

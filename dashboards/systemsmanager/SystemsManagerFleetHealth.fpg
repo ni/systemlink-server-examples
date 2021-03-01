@@ -1,0 +1,1500 @@
+{
+"name": "sysmgmtFleetHealthDashboard",
+"type": "gridPanel",
+"x": "0",
+"y": "0",
+"width": "1440",
+"height": "1200",
+"attributes": [
+{
+"backgroundColor": "%23FFFFFF"
+},
+{
+"panelAlignment": "align%20left"
+},
+{
+"version": "v3.22.4"
+}
+],
+"bindings": [],
+"locales": {
+"en": {
+"tile3.title": "Discovered systems",
+"tile4.title": "Pending systems",
+"tile3.units": "",
+"tile4.units": "",
+"tile6.xAxisLabel": "Time",
+"tile6.yAxisLabel": "CPU percent used",
+"tile7.xAxisLabel": "Time",
+"tile7.yAxisLabel": "Memory percent used",
+"tile8.xAxisLabel": "Time",
+"tile8.yAxisLabel": "Disk percent used",
+"tile6.plotLegend.label0": "",
+"tile6.plotLegend.label1": "",
+"tile6.plotLegend.label2": "",
+"tile6.plotLegend.label3": "",
+"tile6.plotLegend.label4": "",
+"tile8.plotLegend.label0": "",
+"tile7.plotLegend.label0": "",
+"tile11.title": "Jobs",
+"tile13.title": "Systems with highest alarm count",
+"tile13.xAxisLabel": "X Axis",
+"tile13.yAxisLabel": "Y Axis",
+"tile11.plotLegend.label0": "Succeeded",
+"tile11.plotLegend.label1": "Failed",
+"tile11.plotLegend.label2": "In progress",
+"tile11.plotLegend.label3": "In queue",
+"tile11.plotLegend.label4": "Canceled",
+"tile9.markdownText": "</br>\n\nSystem states are software package sets you can define and deploy to systems.",
+"tile9.title": "System states",
+"tile2.title": "Managed systems",
+"tile2.plotLegend.label0": "Connected",
+"tile2.plotLegend.label1": "Disconnected",
+"tile2.plotLegend.label2": "Pending",
+"tile2.plotLegend.label3": "Discovered",
+"tile13.plotLegend.label0": "Alarms by System.ipynb",
+"tile7.plotLegend.label1": "",
+"tile7.plotLegend.label2": "",
+"tile8.plotLegend.label1": "",
+"tile8.plotLegend.label2": "",
+"tile7.plotLegend.label3": "",
+"tile7.plotLegend.label4": "",
+"tile8.plotLegend.label3": "",
+"tile8.plotLegend.label4": "",
+"tile6.title": "Systems with highest CPU usage",
+"tile7.title": "Systems with highest memory usage",
+"tile8.title": "Systems with highest disk usage"
+},
+"zh": {
+"tile3.title": "检测到的系统",
+"tile4.title": "待定系统",
+"tile3.units": "",
+"tile4.units": "",
+"tile6.xAxisLabel": "时间",
+"tile6.yAxisLabel": "CPU使用率",
+"tile7.xAxisLabel": "时间",
+"tile7.yAxisLabel": "内存使用率",
+"tile8.xAxisLabel": "时间",
+"tile8.yAxisLabel": "磁盘使用率",
+"tile6.plotLegend.label0": "",
+"tile6.plotLegend.label1": "",
+"tile6.plotLegend.label2": "",
+"tile6.plotLegend.label3": "",
+"tile6.plotLegend.label4": "",
+"tile8.plotLegend.label0": "",
+"tile7.plotLegend.label0": "",
+"tile11.title": "任务",
+"tile13.title": "报警计数最高的系统",
+"tile13.xAxisLabel": "X轴",
+"tile13.yAxisLabel": "Y轴",
+"tile11.plotLegend.label0": "已成功",
+"tile11.plotLegend.label1": "失败",
+"tile11.plotLegend.label2": "正在进行",
+"tile11.plotLegend.label3": "正在排队",
+"tile11.plotLegend.label4": "已取消",
+"tile9.markdownText": "</Br>\n\n系统状态是用户可定义及部署到系统的程序包集。",
+"tile9.title": "系统状态",
+"tile2.title": "受管系统",
+"tile2.plotLegend.label0": "已连接",
+"tile2.plotLegend.label1": "已断开连接",
+"tile2.plotLegend.label2": "等待",
+"tile2.plotLegend.label3": "已发现",
+"tile13.plotLegend.label0": "来自System.ipynb的警报",
+"tile7.plotLegend.label1": "",
+"tile7.plotLegend.label2": "",
+"tile8.plotLegend.label1": "",
+"tile8.plotLegend.label2": "",
+"tile7.plotLegend.label3": "",
+"tile7.plotLegend.label4": "",
+"tile8.plotLegend.label3": "",
+"tile8.plotLegend.label4": "",
+"tile6.title": "CPU使用量最高的系统",
+"tile7.title": "内存使用量最高的系统",
+"tile8.title": "磁盘使用量最高的系统"
+},
+"de": {
+"tile3.title": "Erkannte Systeme",
+"tile4.title": "Ausstehende Systeme",
+"tile3.units": "",
+"tile4.units": "",
+"tile6.xAxisLabel": "Zeit",
+"tile6.yAxisLabel": "Verwendete CPU (Prozent)",
+"tile7.xAxisLabel": "Zeit",
+"tile7.yAxisLabel": "Belegter Speicher (Prozent)",
+"tile8.xAxisLabel": "Zeit",
+"tile8.yAxisLabel": "Verwendeter Festplattenspeicher (Prozent)",
+"tile6.plotLegend.label0": "",
+"tile6.plotLegend.label1": "",
+"tile6.plotLegend.label2": "",
+"tile6.plotLegend.label3": "",
+"tile6.plotLegend.label4": "",
+"tile8.plotLegend.label0": "",
+"tile7.plotLegend.label0": "",
+"tile11.title": "Aufträge",
+"tile13.title": "Systeme mit der höchsten Alarmzahl",
+"tile13.xAxisLabel": "x-Achse",
+"tile13.yAxisLabel": "y-Achse",
+"tile11.plotLegend.label0": "Erfolg",
+"tile11.plotLegend.label1": "Fehler",
+"tile11.plotLegend.label2": "Vorgang läuft",
+"tile11.plotLegend.label3": "In der Warteschlange",
+"tile11.plotLegend.label4": "Abgebrochen",
+"tile9.markdownText": "</br>\n\nEin Systemzustand ist ein Software-Paketsatz, den Sie definieren und auf Systemen bereitstellen können.",
+"tile9.title": "Systemzustände",
+"tile2.title": "Verwaltete Systeme",
+"tile2.plotLegend.label0": "Verbunden",
+"tile2.plotLegend.label1": "Nicht verbunden",
+"tile2.plotLegend.label2": "Läuft",
+"tile2.plotLegend.label3": "Erkannt",
+"tile13.plotLegend.label0": "Alarme von System.ipynb",
+"tile7.plotLegend.label1": "",
+"tile7.plotLegend.label2": "",
+"tile8.plotLegend.label1": "",
+"tile8.plotLegend.label2": "",
+"tile7.plotLegend.label3": "",
+"tile7.plotLegend.label4": "",
+"tile8.plotLegend.label3": "",
+"tile8.plotLegend.label4": "",
+"tile6.title": "Systeme mit der höchsten CPU-Auslastung",
+"tile7.title": "Systeme mit der höchsten Speicherauslastung",
+"tile8.title": "Systeme mit der höchsten Festplattennutzung"
+},
+"ja": {
+"tile3.title": "検出されたシステム",
+"tile4.title": "保留中のシステム",
+"tile3.units": "",
+"tile4.units": "",
+"tile6.xAxisLabel": "時間",
+"tile6.yAxisLabel": "CPU使用率",
+"tile7.xAxisLabel": "時間",
+"tile7.yAxisLabel": "メモリ使用率",
+"tile8.xAxisLabel": "時間",
+"tile8.yAxisLabel": "ディスク使用率",
+"tile6.plotLegend.label0": "",
+"tile6.plotLegend.label1": "",
+"tile6.plotLegend.label2": "",
+"tile6.plotLegend.label3": "",
+"tile6.plotLegend.label4": "",
+"tile8.plotLegend.label0": "",
+"tile7.plotLegend.label0": "",
+"tile11.title": "ジョブ",
+"tile13.title": "アラーム数が最も多いシステム",
+"tile13.xAxisLabel": "X軸",
+"tile13.yAxisLabel": "Y軸",
+"tile11.plotLegend.label0": "成功",
+"tile11.plotLegend.label1": "失敗",
+"tile11.plotLegend.label2": "処理中",
+"tile11.plotLegend.label3": "キュー内",
+"tile11.plotLegend.label4": "キャンセル",
+"tile9.markdownText": "</br>\n\nシステム状態は、定義してシステムにデプロイできるソフトウェアパッケージセットです。",
+"tile9.title": "システム状態",
+"tile2.title": "管理下システム",
+"tile2.plotLegend.label0": "接続済み",
+"tile2.plotLegend.label1": "接続解除済み",
+"tile2.plotLegend.label2": "保留中",
+"tile2.plotLegend.label3": "検出済み",
+"tile13.plotLegend.label0": "Alarms by System.ipynb",
+"tile7.plotLegend.label1": "",
+"tile7.plotLegend.label2": "",
+"tile8.plotLegend.label1": "",
+"tile8.plotLegend.label2": "",
+"tile7.plotLegend.label3": "",
+"tile7.plotLegend.label4": "",
+"tile8.plotLegend.label3": "",
+"tile8.plotLegend.label4": "",
+"tile6.title": "CPU使用率が最も高いシステム",
+"tile7.title": "メモリ使用率が最も高いシステム",
+"tile8.title": "ディスク使用率が最も高いシステム"
+}
+},
+"models": [
+{
+"name": "aps1",
+"type": "adaptivePanelState",
+"x": "NaN",
+"y": "NaN",
+"width": "NaN",
+"height": "NaN",
+"attributes": [
+{
+"prefix": "aps"
+},
+{
+"size": "12"
+},
+{
+"panelHeight": "1200"
+}
+],
+"models": [
+{
+"name": "psi92",
+"type": "",
+"x": "469.25",
+"y": "0",
+"width": "307.5",
+"height": "262.6875",
+"attributes": [
+{
+"prefix": "psi"
+},
+{
+"matchingName": "tile3"
+},
+{
+"columnRow": "%5B3%2C0%5D"
+},
+{
+"gridSpan": "%5B2%2C2%5D"
+}
+],
+"bindings": []
+},
+{
+"name": "psi93",
+"type": "",
+"x": "469.25",
+"y": "266.6875",
+"width": "307.5",
+"height": "262.6875",
+"attributes": [
+{
+"prefix": "psi"
+},
+{
+"matchingName": "tile4"
+},
+{
+"columnRow": "%5B3%2C2%5D"
+},
+{
+"gridSpan": "%5B2%2C2%5D"
+}
+],
+"bindings": []
+},
+{
+"name": "psi94",
+"type": "",
+"x": "2",
+"y": "533.375",
+"width": "619",
+"height": "529.375",
+"attributes": [
+{
+"prefix": "psi"
+},
+{
+"matchingName": "tile6"
+},
+{
+"columnRow": "%5B0%2C4%5D"
+},
+{
+"gridSpan": "%5B4%2C4%5D"
+}
+],
+"bindings": []
+},
+{
+"name": "psi95",
+"type": "",
+"x": "625",
+"y": "533.375",
+"width": "619",
+"height": "529.375",
+"attributes": [
+{
+"prefix": "psi"
+},
+{
+"matchingName": "tile7"
+},
+{
+"columnRow": "%5B4%2C4%5D"
+},
+{
+"gridSpan": "%5B4%2C4%5D"
+}
+],
+"bindings": []
+},
+{
+"name": "psi96",
+"type": "",
+"x": "1248",
+"y": "533.375",
+"width": "619",
+"height": "529.375",
+"attributes": [
+{
+"prefix": "psi"
+},
+{
+"matchingName": "tile8"
+},
+{
+"columnRow": "%5B8%2C4%5D"
+},
+{
+"gridSpan": "%5B4%2C4%5D"
+}
+],
+"bindings": []
+},
+{
+"name": "psi97",
+"type": "",
+"x": "780.75",
+"y": "0",
+"width": "463.25",
+"height": "262.6875",
+"attributes": [
+{
+"prefix": "psi"
+},
+{
+"matchingName": "tile11"
+},
+{
+"columnRow": "%5B5%2C0%5D"
+},
+{
+"gridSpan": "%5B3%2C2%5D"
+}
+],
+"bindings": []
+},
+{
+"name": "psi98",
+"type": "",
+"x": "1248",
+"y": "0",
+"width": "619",
+"height": "529.375",
+"attributes": [
+{
+"prefix": "psi"
+},
+{
+"matchingName": "tile13"
+},
+{
+"columnRow": "%5B8%2C0%5D"
+},
+{
+"gridSpan": "%5B4%2C4%5D"
+}
+],
+"bindings": []
+},
+{
+"name": "psi99",
+"type": "",
+"x": "780.75",
+"y": "266.6875",
+"width": "463.25",
+"height": "262.6875",
+"attributes": [
+{
+"prefix": "psi"
+},
+{
+"matchingName": "tile9"
+},
+{
+"columnRow": "%5B5%2C2%5D"
+},
+{
+"gridSpan": "%5B3%2C2%5D"
+}
+],
+"bindings": []
+},
+{
+"name": "psi100",
+"type": "",
+"x": "2",
+"y": "0",
+"width": "463.25",
+"height": "529.375",
+"attributes": [
+{
+"prefix": "psi"
+},
+{
+"matchingName": "tile2"
+},
+{
+"columnRow": "%5B0%2C0%5D"
+},
+{
+"gridSpan": "%5B3%2C4%5D"
+}
+],
+"bindings": []
+}
+]
+},
+{
+"name": "aps2",
+"type": "adaptivePanelState",
+"x": "NaN",
+"y": "NaN",
+"width": "NaN",
+"height": "NaN",
+"attributes": [
+{
+"prefix": "aps"
+},
+{
+"size": "6"
+},
+{
+"panelHeight": "0"
+}
+],
+"models": [
+{
+"name": "psi110",
+"type": "",
+"x": "469.25",
+"y": "0",
+"width": "463.25",
+"height": "262.6875",
+"attributes": [
+{
+"prefix": "psi"
+},
+{
+"matchingName": "tile3"
+},
+{
+"columnRow": "%5B3%2C0%5D"
+},
+{
+"gridSpan": "%5B3%2C2%5D"
+}
+],
+"bindings": []
+},
+{
+"name": "psi111",
+"type": "",
+"x": "469.25",
+"y": "266.6875",
+"width": "463.25",
+"height": "262.6875",
+"attributes": [
+{
+"prefix": "psi"
+},
+{
+"matchingName": "tile4"
+},
+{
+"columnRow": "%5B3%2C2%5D"
+},
+{
+"gridSpan": "%5B3%2C2%5D"
+}
+],
+"bindings": []
+},
+{
+"name": "psi112",
+"type": "",
+"x": "2",
+"y": "1333.4375",
+"width": "930.5",
+"height": "529.375",
+"attributes": [
+{
+"prefix": "psi"
+},
+{
+"matchingName": "tile6"
+},
+{
+"columnRow": "%5B0%2C10%5D"
+},
+{
+"gridSpan": "%5B6%2C4%5D"
+}
+],
+"bindings": []
+},
+{
+"name": "psi113",
+"type": "",
+"x": "2",
+"y": "1866.8125",
+"width": "930.5",
+"height": "529.375",
+"attributes": [
+{
+"prefix": "psi"
+},
+{
+"matchingName": "tile7"
+},
+{
+"columnRow": "%5B0%2C14%5D"
+},
+{
+"gridSpan": "%5B6%2C4%5D"
+}
+],
+"bindings": []
+},
+{
+"name": "psi114",
+"type": "",
+"x": "2",
+"y": "2400.1875",
+"width": "930.5",
+"height": "529.375",
+"attributes": [
+{
+"prefix": "psi"
+},
+{
+"matchingName": "tile8"
+},
+{
+"columnRow": "%5B0%2C18%5D"
+},
+{
+"gridSpan": "%5B6%2C4%5D"
+}
+],
+"bindings": []
+},
+{
+"name": "psi115",
+"type": "",
+"x": "2",
+"y": "533.375",
+"width": "463.25",
+"height": "262.6875",
+"attributes": [
+{
+"prefix": "psi"
+},
+{
+"matchingName": "tile11"
+},
+{
+"columnRow": "%5B0%2C4%5D"
+},
+{
+"gridSpan": "%5B3%2C2%5D"
+}
+],
+"bindings": []
+},
+{
+"name": "psi116",
+"type": "",
+"x": "2",
+"y": "800.0625",
+"width": "930.5",
+"height": "529.375",
+"attributes": [
+{
+"prefix": "psi"
+},
+{
+"matchingName": "tile13"
+},
+{
+"columnRow": "%5B0%2C6%5D"
+},
+{
+"gridSpan": "%5B6%2C4%5D"
+}
+],
+"bindings": []
+},
+{
+"name": "psi117",
+"type": "",
+"x": "469.25",
+"y": "533.375",
+"width": "463.25",
+"height": "262.6875",
+"attributes": [
+{
+"prefix": "psi"
+},
+{
+"matchingName": "tile9"
+},
+{
+"columnRow": "%5B3%2C4%5D"
+},
+{
+"gridSpan": "%5B3%2C2%5D"
+}
+],
+"bindings": []
+},
+{
+"name": "psi118",
+"type": "",
+"x": "2",
+"y": "0",
+"width": "463.25",
+"height": "529.375",
+"attributes": [
+{
+"prefix": "psi"
+},
+{
+"matchingName": "tile2"
+},
+{
+"columnRow": "%5B0%2C0%5D"
+},
+{
+"gridSpan": "%5B3%2C4%5D"
+}
+],
+"bindings": []
+}
+]
+},
+{
+"name": "aps3",
+"type": "adaptivePanelState",
+"x": "NaN",
+"y": "NaN",
+"width": "NaN",
+"height": "NaN",
+"attributes": [
+{
+"prefix": "aps"
+},
+{
+"size": "1"
+},
+{
+"panelHeight": "0"
+}
+],
+"models": [
+{
+"name": "psi155",
+"type": "",
+"x": "2",
+"y": "533.375",
+"width": "151.75",
+"height": "262.6875",
+"attributes": [
+{
+"prefix": "psi"
+},
+{
+"matchingName": "tile3"
+},
+{
+"columnRow": "%5B0%2C4%5D"
+},
+{
+"gridSpan": "%5B1%2C2%5D"
+}
+],
+"bindings": []
+},
+{
+"name": "psi156",
+"type": "",
+"x": "2",
+"y": "266.6875",
+"width": "151.75",
+"height": "262.6875",
+"attributes": [
+{
+"prefix": "psi"
+},
+{
+"matchingName": "tile4"
+},
+{
+"columnRow": "%5B0%2C2%5D"
+},
+{
+"gridSpan": "%5B1%2C2%5D"
+}
+],
+"bindings": []
+},
+{
+"name": "psi157",
+"type": "",
+"x": "2",
+"y": "1600.125",
+"width": "151.75",
+"height": "262.6875",
+"attributes": [
+{
+"prefix": "psi"
+},
+{
+"matchingName": "tile6"
+},
+{
+"columnRow": "%5B0%2C12%5D"
+},
+{
+"gridSpan": "%5B1%2C2%5D"
+}
+],
+"bindings": []
+},
+{
+"name": "psi158",
+"type": "",
+"x": "2",
+"y": "1866.8125",
+"width": "151.75",
+"height": "262.6875",
+"attributes": [
+{
+"prefix": "psi"
+},
+{
+"matchingName": "tile7"
+},
+{
+"columnRow": "%5B0%2C14%5D"
+},
+{
+"gridSpan": "%5B1%2C2%5D"
+}
+],
+"bindings": []
+},
+{
+"name": "psi159",
+"type": "",
+"x": "2",
+"y": "2133.5",
+"width": "151.75",
+"height": "262.6875",
+"attributes": [
+{
+"prefix": "psi"
+},
+{
+"matchingName": "tile8"
+},
+{
+"columnRow": "%5B0%2C16%5D"
+},
+{
+"gridSpan": "%5B1%2C2%5D"
+}
+],
+"bindings": []
+},
+{
+"name": "psi160",
+"type": "",
+"x": "2",
+"y": "800.0625",
+"width": "151.75",
+"height": "262.6875",
+"attributes": [
+{
+"prefix": "psi"
+},
+{
+"matchingName": "tile11"
+},
+{
+"columnRow": "%5B0%2C6%5D"
+},
+{
+"gridSpan": "%5B1%2C2%5D"
+}
+],
+"bindings": []
+},
+{
+"name": "psi161",
+"type": "",
+"x": "2",
+"y": "1333.4375",
+"width": "151.75",
+"height": "262.6875",
+"attributes": [
+{
+"prefix": "psi"
+},
+{
+"matchingName": "tile13"
+},
+{
+"columnRow": "%5B0%2C10%5D"
+},
+{
+"gridSpan": "%5B1%2C2%5D"
+}
+],
+"bindings": []
+},
+{
+"name": "psi162",
+"type": "",
+"x": "2",
+"y": "1066.75",
+"width": "151.75",
+"height": "262.6875",
+"attributes": [
+{
+"prefix": "psi"
+},
+{
+"matchingName": "tile9"
+},
+{
+"columnRow": "%5B0%2C8%5D"
+},
+{
+"gridSpan": "%5B1%2C2%5D"
+}
+],
+"bindings": []
+},
+{
+"name": "psi163",
+"type": "",
+"x": "2",
+"y": "0",
+"width": "151.75",
+"height": "262.6875",
+"attributes": [
+{
+"prefix": "psi"
+},
+{
+"matchingName": "tile2"
+},
+{
+"columnRow": "%5B0%2C0%5D"
+},
+{
+"gridSpan": "%5B1%2C2%5D"
+}
+],
+"bindings": []
+}
+]
+},
+{
+"name": "tile3",
+"type": "count",
+"x": "469.25",
+"y": "0",
+"width": "307.5",
+"height": "262.6875",
+"attributes": [
+{
+"prefix": "tile"
+},
+{
+"title": {
+"localizationKey": "tile3.title"
+}
+},
+{
+"unitsEnabled": "false"
+},
+{
+"datasource": "%7B%22type%22%3A%22system%22%2C%22binding%22%3A%22%7B%5C%22name%5C%22%3A%5C%22Discovered%20systems%5C%22%2C%5C%22value%5C%22%3A%5C%22discoveredSystems%5C%22%7D%22%7D"
+},
+{
+"navigationURLEnabled": "true"
+},
+{
+"zIndex": "3"
+},
+{
+"columnRow": "%5B3%2C0%5D"
+},
+{
+"gridSpan": "%5B2%2C2%5D"
+},
+{
+"units": {
+"localizationKey": "tile3.units"
+}
+}
+],
+"bindings": [
+{
+"value": [
+{
+"type": "system",
+"binding": "{\"name\":\"Discovered systems\",\"value\":\"discoveredSystems\"}"
+}
+]
+},
+{
+"navigationURL": [
+{
+"type": "system",
+"binding": {
+"name": "Discovered systems",
+"binding": "#systemsmanagement/discovered"
+}
+}
+]
+}
+]
+},
+{
+"name": "tile4",
+"type": "count",
+"x": "469.25",
+"y": "266.6875",
+"width": "307.5",
+"height": "262.6875",
+"attributes": [
+{
+"prefix": "tile"
+},
+{
+"title": {
+"localizationKey": "tile4.title"
+}
+},
+{
+"unitsEnabled": "false"
+},
+{
+"datasource": "%7B%22type%22%3A%22system%22%2C%22binding%22%3A%22%7B%5C%22name%5C%22%3A%5C%22Pending%20systems%5C%22%2C%5C%22value%5C%22%3A%5C%22pendingSystems%5C%22%7D%22%7D"
+},
+{
+"navigationURLEnabled": "true"
+},
+{
+"zIndex": "4"
+},
+{
+"columnRow": "%5B3%2C2%5D"
+},
+{
+"gridSpan": "%5B2%2C2%5D"
+},
+{
+"units": {
+"localizationKey": "tile4.units"
+}
+}
+],
+"bindings": [
+{
+"value": [
+{
+"type": "system",
+"binding": "{\"name\":\"Pending systems\",\"value\":\"pendingSystems\"}"
+}
+]
+},
+{
+"navigationURL": [
+{
+"type": "system",
+"binding": {
+"name": "Pending systems",
+"binding": "#systemsmanagement/unapproved"
+}
+}
+]
+}
+]
+},
+{
+"name": "tile6",
+"type": "graph",
+"x": "2",
+"y": "533.375",
+"width": "619",
+"height": "529.375",
+"attributes": [
+{
+"prefix": "tile"
+},
+{
+"multiDatasource": "%5B%7B%22label%22%3A%22CPU%20usage%22%2C%22value%22%3A%22%7B%5C%22type%5C%22%3A%5C%22tagQuery%5C%22%2C%5C%22binding%5C%22%3A%5C%22%7B%5C%5C%5C%22type%5C%5C%5C%22%3A%5C%5C%5C%22tagQuery%5C%5C%5C%22%2C%5C%5C%5C%22value%5C%5C%5C%22%3A%5B%5B%5C%5C%5C%22path%5C%5C%5C%22%2C%5C%5C%5C%22matches%5C%5C%5C%22%2C%5C%5C%5C%22*.Health.CPU.MeanUsePercentage%5C%5C%5C%22%5D%5D%2C%5C%5C%5C%22name%5C%5C%5C%22%3A%5C%5C%5C%22CPU%20usage%5C%5C%5C%22%2C%5C%5C%5C%22parameters%5C%5C%5C%22%3A%7B%5C%5C%5C%22take%5C%5C%5C%22%3A5%2C%5C%5C%5C%22orderBy%5C%5C%5C%22%3A%5C%5C%5C%22highestValues%5C%5C%5C%22%7D%7D%5C%22%7D%22%7D%5D"
+},
+{
+"renderStyle": "line"
+},
+{
+"xAxisLabel": {
+"localizationKey": "tile6.xAxisLabel"
+}
+},
+{
+"xAxisLabelEnabled": "false"
+},
+{
+"yAxisLabel": {
+"localizationKey": "tile6.yAxisLabel"
+}
+},
+{
+"yAxisLabelEnabled": "true"
+},
+{
+"yAxisAutoScale": "none"
+},
+{
+"yAxisMin": "0"
+},
+{
+"yAxisMax": "100"
+},
+{
+"windowSize": "86400"
+},
+{
+"navigationURLEnabled": "false"
+},
+{
+"zIndex": "6"
+},
+{
+"columnRow": "%5B0%2C4%5D"
+},
+{
+"gridSpan": "%5B4%2C4%5D"
+},
+{
+"plotLegendEditable": "false"
+},
+{
+"plotLegendVisible": "true"
+},
+{
+"title": {
+"localizationKey": "tile6.title"
+}
+}
+],
+"bindings": [
+{
+"history": [
+{
+"type": "tagQuery",
+"binding": "{\"type\":\"tagQuery\",\"value\":[[\"path\",\"matches\",\"*.Health.CPU.MeanUsePercentage\"]],\"name\":\"CPU usage\",\"parameters\":{\"take\":5,\"orderBy\":\"highestValues\"}}"
+}
+]
+}
+]
+},
+{
+"name": "tile7",
+"type": "graph",
+"x": "625",
+"y": "533.375",
+"width": "619",
+"height": "529.375",
+"attributes": [
+{
+"prefix": "tile"
+},
+{
+"multiDatasource": "%5B%7B%22label%22%3A%22Memory%20usage%22%2C%22value%22%3A%22%7B%5C%22type%5C%22%3A%5C%22tagQuery%5C%22%2C%5C%22binding%5C%22%3A%5C%22%7B%5C%5C%5C%22type%5C%5C%5C%22%3A%5C%5C%5C%22tagQuery%5C%5C%5C%22%2C%5C%5C%5C%22value%5C%5C%5C%22%3A%5B%5B%5C%5C%5C%22path%5C%5C%5C%22%2C%5C%5C%5C%22matches%5C%5C%5C%22%2C%5C%5C%5C%22*.Health.Memory.UsePercentage%5C%5C%5C%22%5D%5D%2C%5C%5C%5C%22name%5C%5C%5C%22%3A%5C%5C%5C%22Memory%20usage%5C%5C%5C%22%2C%5C%5C%5C%22parameters%5C%5C%5C%22%3A%7B%5C%5C%5C%22take%5C%5C%5C%22%3A5%2C%5C%5C%5C%22orderBy%5C%5C%5C%22%3A%5C%5C%5C%22highestValues%5C%5C%5C%22%7D%7D%5C%22%7D%22%7D%5D"
+},
+{
+"renderStyle": "line"
+},
+{
+"xAxisLabel": {
+"localizationKey": "tile7.xAxisLabel"
+}
+},
+{
+"xAxisLabelEnabled": "false"
+},
+{
+"yAxisLabel": {
+"localizationKey": "tile7.yAxisLabel"
+}
+},
+{
+"yAxisLabelEnabled": "true"
+},
+{
+"yAxisAutoScale": "none"
+},
+{
+"yAxisMin": "0"
+},
+{
+"yAxisMax": "100"
+},
+{
+"windowSize": "86400"
+},
+{
+"navigationURLEnabled": "false"
+},
+{
+"zIndex": "7"
+},
+{
+"columnRow": "%5B4%2C4%5D"
+},
+{
+"gridSpan": "%5B4%2C4%5D"
+},
+{
+"plotLegendEditable": "false"
+},
+{
+"plotLegendVisible": "true"
+},
+{
+"title": {
+"localizationKey": "tile7.title"
+}
+}
+],
+"bindings": [
+{
+"history": [
+{
+"type": "tagQuery",
+"binding": "{\"type\":\"tagQuery\",\"value\":[[\"path\",\"matches\",\"*.Health.Memory.UsePercentage\"]],\"name\":\"Memory usage\",\"parameters\":{\"take\":5,\"orderBy\":\"highestValues\"}}"
+}
+]
+}
+]
+},
+{
+"name": "tile8",
+"type": "graph",
+"x": "1248",
+"y": "533.375",
+"width": "619",
+"height": "529.375",
+"attributes": [
+{
+"prefix": "tile"
+},
+{
+"multiDatasource": "%5B%7B%22label%22%3A%22Disk%20usage%22%2C%22value%22%3A%22%7B%5C%22type%5C%22%3A%5C%22tagQuery%5C%22%2C%5C%22binding%5C%22%3A%5C%22%7B%5C%5C%5C%22type%5C%5C%5C%22%3A%5C%5C%5C%22tagQuery%5C%5C%5C%22%2C%5C%5C%5C%22value%5C%5C%5C%22%3A%5B%5B%5C%5C%5C%22path%5C%5C%5C%22%2C%5C%5C%5C%22matches%5C%5C%5C%22%2C%5C%5C%5C%22*.Health.Disk.UsePercentage%5C%5C%5C%22%5D%5D%2C%5C%5C%5C%22name%5C%5C%5C%22%3A%5C%5C%5C%22Disk%20usage%5C%5C%5C%22%2C%5C%5C%5C%22parameters%5C%5C%5C%22%3A%7B%5C%5C%5C%22take%5C%5C%5C%22%3A5%2C%5C%5C%5C%22orderBy%5C%5C%5C%22%3A%5C%5C%5C%22highestValues%5C%5C%5C%22%7D%7D%5C%22%7D%22%7D%5D"
+},
+{
+"renderStyle": "line"
+},
+{
+"xAxisLabel": {
+"localizationKey": "tile8.xAxisLabel"
+}
+},
+{
+"xAxisLabelEnabled": "false"
+},
+{
+"yAxisLabel": {
+"localizationKey": "tile8.yAxisLabel"
+}
+},
+{
+"yAxisLabelEnabled": "true"
+},
+{
+"yAxisAutoScale": "none"
+},
+{
+"yAxisMin": "0"
+},
+{
+"yAxisMax": "100"
+},
+{
+"windowSize": "86400"
+},
+{
+"navigationURLEnabled": "false"
+},
+{
+"zIndex": "8"
+},
+{
+"columnRow": "%5B8%2C4%5D"
+},
+{
+"gridSpan": "%5B4%2C4%5D"
+},
+{
+"plotLegendEditable": "false"
+},
+{
+"plotLegendVisible": "true"
+},
+{
+"title": {
+"localizationKey": "tile8.title"
+}
+}
+],
+"bindings": [
+{
+"history": [
+{
+"type": "tagQuery",
+"binding": "{\"type\":\"tagQuery\",\"value\":[[\"path\",\"matches\",\"*.Health.Disk.UsePercentage\"]],\"name\":\"Disk usage\",\"parameters\":{\"take\":5,\"orderBy\":\"highestValues\"}}"
+}
+]
+}
+]
+},
+{
+"name": "tile11",
+"type": "pie",
+"x": "780.75",
+"y": "0",
+"width": "463.25",
+"height": "262.6875",
+"attributes": [
+{
+"prefix": "tile"
+},
+{
+"title": {
+"localizationKey": "tile11.title"
+}
+},
+{
+"multiDatasource": "%5B%7B%22label%22%3A%22Succeeded%20jobs%22%2C%22value%22%3A%22%7B%5C%22type%5C%22%3A%5C%22job%5C%22%2C%5C%22binding%5C%22%3A%5C%22%7B%5C%5C%5C%22name%5C%5C%5C%22%3A%5C%5C%5C%22Succeeded%20jobs%5C%5C%5C%22%2C%5C%5C%5C%22value%5C%5C%5C%22%3A%5C%5C%5C%22succeededJobs%5C%5C%5C%22%7D%5C%22%7D%22%7D%2C%7B%22label%22%3A%22Failed%20jobs%22%2C%22value%22%3A%22%7B%5C%22type%5C%22%3A%5C%22job%5C%22%2C%5C%22binding%5C%22%3A%5C%22%7B%5C%5C%5C%22name%5C%5C%5C%22%3A%5C%5C%5C%22Failed%20jobs%5C%5C%5C%22%2C%5C%5C%5C%22value%5C%5C%5C%22%3A%5C%5C%5C%22failedJobs%5C%5C%5C%22%7D%5C%22%7D%22%7D%2C%7B%22label%22%3A%22In-progress%20jobs%22%2C%22value%22%3A%22%7B%5C%22type%5C%22%3A%5C%22job%5C%22%2C%5C%22binding%5C%22%3A%5C%22%7B%5C%5C%5C%22name%5C%5C%5C%22%3A%5C%5C%5C%22In-progress%20jobs%5C%5C%5C%22%2C%5C%5C%5C%22value%5C%5C%5C%22%3A%5C%5C%5C%22inProgressJobs%5C%5C%5C%22%7D%5C%22%7D%22%7D%2C%7B%22label%22%3A%22Queued%20jobs%22%2C%22value%22%3A%22%7B%5C%22type%5C%22%3A%5C%22job%5C%22%2C%5C%22binding%5C%22%3A%5C%22%7B%5C%5C%5C%22name%5C%5C%5C%22%3A%5C%5C%5C%22Queued%20jobs%5C%5C%5C%22%2C%5C%5C%5C%22value%5C%5C%5C%22%3A%5C%5C%5C%22queuedJobs%5C%5C%5C%22%7D%5C%22%7D%22%7D%2C%7B%22label%22%3A%22Canceled%20jobs%22%2C%22value%22%3A%22%7B%5C%22type%5C%22%3A%5C%22job%5C%22%2C%5C%22binding%5C%22%3A%5C%22%7B%5C%5C%5C%22name%5C%5C%5C%22%3A%5C%5C%5C%22Canceled%20jobs%5C%5C%5C%22%2C%5C%5C%5C%22value%5C%5C%5C%22%3A%5C%5C%5C%22canceledJobs%5C%5C%5C%22%7D%5C%22%7D%22%7D%5D"
+},
+{
+"plotLegend": "%5B%7B%22label%22%3A%7B%22localizationKey%22%3A%22tile11.plotLegend.label0%22%7D%2C%22color%22%3A%22%2302B26A%22%7D%2C%7B%22label%22%3A%7B%22localizationKey%22%3A%22tile11.plotLegend.label1%22%7D%2C%22color%22%3A%22%23FB2A00%22%7D%2C%7B%22label%22%3A%7B%22localizationKey%22%3A%22tile11.plotLegend.label2%22%7D%2C%22color%22%3A%22%230080FB%22%7D%2C%7B%22label%22%3A%7B%22localizationKey%22%3A%22tile11.plotLegend.label3%22%7D%2C%22color%22%3A%22%236FECEF%22%7D%2C%7B%22label%22%3A%7B%22localizationKey%22%3A%22tile11.plotLegend.label4%22%7D%2C%22color%22%3A%22%23E6CD00%22%7D%5D"
+},
+{
+"navigationURLEnabled": "true"
+},
+{
+"zIndex": "11"
+},
+{
+"columnRow": "%5B5%2C0%5D"
+},
+{
+"gridSpan": "%5B3%2C2%5D"
+},
+{
+"navigationURL": "%23systemsmanagement/history"
+}
+],
+"bindings": [
+{
+"value": [
+{
+"type": "job",
+"binding": "{\"name\":\"Succeeded jobs\",\"value\":\"succeededJobs\"}"
+},
+{
+"type": "job",
+"binding": "{\"name\":\"Failed jobs\",\"value\":\"failedJobs\"}"
+},
+{
+"type": "job",
+"binding": "{\"name\":\"In-progress jobs\",\"value\":\"inProgressJobs\"}"
+},
+{
+"type": "job",
+"binding": "{\"name\":\"Queued jobs\",\"value\":\"queuedJobs\"}"
+},
+{
+"type": "job",
+"binding": "{\"name\":\"Canceled jobs\",\"value\":\"canceledJobs\"}"
+}
+]
+}
+]
+},
+{
+"name": "tile13",
+"type": "graph",
+"x": "1248",
+"y": "0",
+"width": "619",
+"height": "529.375",
+"attributes": [
+{
+"prefix": "tile"
+},
+{
+"title": {
+"localizationKey": "tile13.title"
+}
+},
+{
+"multiDatasource": "%5B%7B%22label%22%3A%22Alarms%20by%20System.ipynb%22%2C%22value%22%3A%22%7B%5C%22type%5C%22%3A%5C%22notebook%5C%22%2C%5C%22binding%5C%22%3A%5C%22%7B%5C%5C%5C%22name%5C%5C%5C%22%3A%5C%5C%5C%22_shared/reports/Alarms%20by%20System.ipynb%5C%5C%5C%22%2C%5C%5C%5C%22executionInterval%5C%5C%5C%22%3A900%2C%5C%5C%5C%22version%5C%5C%5C%22%3A2%2C%5C%5C%5C%22output%5C%5C%5C%22%3A%5C%5C%5C%22alarms_by_system%5C%5C%5C%22%2C%5C%5C%5C%22params%5C%5C%5C%22%3A%5B%7B%5C%5C%5C%22name%5C%5C%5C%22%3A%5C%5C%5C%22num_systems%5C%5C%5C%22%2C%5C%5C%5C%22value%5C%5C%5C%22%3A%5C%5C%5C%228%5C%5C%5C%22%7D%5D%7D%5C%22%7D%22%7D%5D"
+},
+{
+"renderStyle": "line"
+},
+{
+"xAxisLabel": {
+"localizationKey": "tile13.xAxisLabel"
+}
+},
+{
+"yAxisLabel": {
+"localizationKey": "tile13.yAxisLabel"
+}
+},
+{
+"yAxisAutoScale": "grow"
+},
+{
+"yAxisMin": "0"
+},
+{
+"yAxisMax": "1"
+},
+{
+"windowSize": "3600"
+},
+{
+"navigationURLEnabled": "false"
+},
+{
+"plotLegend": "%5B%7B%22label%22%3A%7B%22localizationKey%22%3A%22tile13.plotLegend.label0%22%7D%2C%22color%22%3A%22%23009FF5%22%7D%5D"
+},
+{
+"zIndex": "13"
+},
+{
+"columnRow": "%5B8%2C0%5D"
+},
+{
+"gridSpan": "%5B4%2C4%5D"
+},
+{
+"navigationURL": ""
+},
+{
+"plotLegendEditable": "false"
+},
+{
+"plotLegendVisible": "false"
+}
+],
+"bindings": [
+{
+"value": [
+{
+"type": "notebook",
+"binding": "{\"name\":\"_shared/reports/Alarms by System.ipynb\",\"executionInterval\":900,\"version\":2,\"output\":\"alarms_by_system\",\"params\":[{\"name\":\"num_systems\",\"value\":\"8\"}]}"
+}
+]
+}
+]
+},
+{
+"name": "tile9",
+"type": "markdown",
+"x": "780.75",
+"y": "266.6875",
+"width": "463.25",
+"height": "262.6875",
+"attributes": [
+{
+"prefix": "tile"
+},
+{
+"markdownText": {
+"localizationKey": "tile9.markdownText"
+}
+},
+{
+"title": {
+"localizationKey": "tile9.title"
+}
+},
+{
+"navigationURLEnabled": "true"
+},
+{
+"zIndex": "15"
+},
+{
+"columnRow": "%5B5%2C2%5D"
+},
+{
+"gridSpan": "%5B3%2C2%5D"
+},
+{
+"navigationURL": "%23systemsmanagement/systemstates"
+}
+],
+"bindings": []
+},
+{
+"name": "tile2",
+"type": "pie",
+"x": "2",
+"y": "0",
+"width": "463.25",
+"height": "529.375",
+"attributes": [
+{
+"prefix": "tile"
+},
+{
+"title": {
+"localizationKey": "tile2.title"
+}
+},
+{
+"multiDatasource": "%5B%7B%22label%22%3A%22Connected%20systems%22%2C%22value%22%3A%22%7B%5C%22type%5C%22%3A%5C%22system%5C%22%2C%5C%22binding%5C%22%3A%5C%22%7B%5C%5C%5C%22name%5C%5C%5C%22%3A%5C%5C%5C%22Connected%20systems%5C%5C%5C%22%2C%5C%5C%5C%22value%5C%5C%5C%22%3A%5C%5C%5C%22connectedSystems%5C%5C%5C%22%7D%5C%22%7D%22%7D%2C%7B%22label%22%3A%22Disconnected%20systems%22%2C%22value%22%3A%22%7B%5C%22type%5C%22%3A%5C%22system%5C%22%2C%5C%22binding%5C%22%3A%5C%22%7B%5C%5C%5C%22name%5C%5C%5C%22%3A%5C%5C%5C%22Disconnected%20systems%5C%5C%5C%22%2C%5C%5C%5C%22value%5C%5C%5C%22%3A%5C%5C%5C%22disconnectedSystems%5C%5C%5C%22%7D%5C%22%7D%22%7D%5D"
+},
+{
+"plotLegend": "%5B%7B%22label%22%3A%7B%22localizationKey%22%3A%22tile2.plotLegend.label0%22%7D%2C%22color%22%3A%22%2302B26A%22%7D%2C%7B%22label%22%3A%7B%22localizationKey%22%3A%22tile2.plotLegend.label1%22%7D%2C%22color%22%3A%22%23FB2A00%22%7D%5D"
+},
+{
+"navigationURLEnabled": "true"
+},
+{
+"useFilter": "false"
+},
+{
+"zIndex": "16"
+},
+{
+"columnRow": "%5B0%2C0%5D"
+},
+{
+"gridSpan": "%5B3%2C4%5D"
+},
+{
+"navigationURL": "%23systemsmanagement/systemsbrowser"
+}
+],
+"bindings": [
+{
+"value": [
+{
+"type": "system",
+"binding": "{\"name\":\"Connected systems\",\"value\":\"connectedSystems\"}"
+},
+{
+"type": "system",
+"binding": "{\"name\":\"Disconnected systems\",\"value\":\"disconnectedSystems\"}"
+}
+]
+}
+]
+}
+]
+}
